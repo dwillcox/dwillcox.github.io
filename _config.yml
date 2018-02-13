@@ -17,3 +17,7 @@ linkedin_username: donaldewillcox
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  sass_dir: _sass
