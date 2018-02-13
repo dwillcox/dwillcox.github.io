@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-Shown below is my CV, if you have trouble viewing it, here is a <a href="cv.pdf">direct link</a>.
+My CV is displayed below and can also be <a href="cv.pdf">directly downloaded</a>.
 
 <section> <div>
 <object data="cv.pdf" type="application/pdf" width="750" height="1000"> 
