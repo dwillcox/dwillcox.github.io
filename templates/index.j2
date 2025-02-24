@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Don Willcox Homepage</title>
+		<title>{{ title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,24 +16,27 @@
 		<div id="page-wrapper">
 
 		<!-- Header -->
-			<header id="header">
-				<h1 id="logo"><a href="index.html">Don Willcox</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="research_gallery.html">Research Gallery</a>
+        <header id="header">
+			<h1 id="logo"><a href="{{ navigation.link|e }}">{{ navigation.name|e }}</a></h1>
+			<nav id="nav">
+				<ul>
+					{% for page in navigation.pages %}
+					<li>
+						<a href="{{ page.link|e }}">{{ page.name|e }}</a>
+						{% if page.pages %}
 							<ul>
-								<li><a href="research_codegen.html">Code Generation For PDEs</a></li>
-								<li><a href="research_nucastro.html">Nuclear Astrophysics</a></li>
-								<li><a href="research_neutrinos.html">Neutrino Quantum Kinetics</a></li>
-								<li><a href="research_ml_astro.html">Machine Learning For Astrophysics</a></li>
+								{% for subpage in page.pages %}
+								<li>
+									<a href="{{ subpage.link|e }}">{{ subpage.name|e }}</a>
+								</li>
+								{% endfor %}
 							</ul>
-						</li>
-						<li><a href="visual_cv.html">CV</a></li>
-						<li><a href="publications.html">Papers</a></li>
-					</ul>
-				</nav>
-			</header>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</header>
 		<!-- End Header -->
 
 		<!-- Main -->
@@ -94,29 +97,24 @@
 		<!-- End Main -->
 
 		<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://github.com/dwillcox" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="mailto:eugene.willcox@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.linkedin.com/in/donaldewillcox" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Don Willcox. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+        <footer id="footer">
+			<ul class="icons">
+				{% for way in contact.types %}
+				<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
+				{% endfor %}
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Don Willcox. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
 		<!-- End Footer -->
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		{% for script in template.scripts %}
+		<script src="{{ script|e }}"></script>
+		{% endfor %}
 		<!-- End Scripts -->
 	</body>
 </html>

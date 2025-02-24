@@ -1,0 +1,14 @@
+contact:
+  types:
+    - email:
+        name: "Email"
+        link: "mailto:eugene.willcox@gmail.com"
+        class: "icon solid alt fa-envelope"
+    - github:
+        name: "GitHub"
+        link: "https://github.com/dwillcox"
+        class: "icon brands alt fa-github"
+    - linkedin:
+        name: "LinkedIn"
+        link: "https://www.linkedin.com/in/donaldewillcox"
+        class: "icon brands alt fa-linkedin-in"
