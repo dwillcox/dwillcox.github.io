@@ -1,0 +1,82 @@
+dir_config_file: config.yaml
+
+enable_mathjax: true
+enable_codehilite: true
+
+enable_jinja: true
+read_frontmatter: true
+jinja_header:
+yaml_jinja_depth: 10
+
+template: simple
+template_dirs: []
+
+toc_depth: 2-4
+encoding: utf-8
+
+# Configure preprocessor input/output directory settings
+## sources: list of Markdown source files or directories to convert to HTML or recurse into
+sources: source
+#
+## base_dir: Base of the source directory hierarchy specified as relative path from current file
+base_dir: .
+#
+## dst_dir: Base of the output directory hierarchy specified as relative path from current file
+dst_dir: generated
+#
+## base_url: Base URL of the target website. NOTE: if set, include trailing slash.
+base_url: ''
+#
+## standalone: If true, all generated CSS & JavaScript are included inline in the target HTML files.
+##             If false, specify shared_dir to place generated CSS & JS.
+standalone: false
+#
+## shared_dir: For non-standalone pages, put generated CSS & JavaScript here (relative to dst_dir)
+shared_dir: shared/md-to-html
+#
+## absolute_links: Generate absolute links?
+absolute_links: false
+#
+## update: Only compile source if it is newer than the target HTML file.
+update: false
+
+# include: YAML Config file (or list of such) to read from, after reading all settings from current file
+# (i.e. the preprocessor will process the current file as a header, then the following files)
+include:
+  - source/navigation.yaml
+  - source/contact.yaml
+  - source/template.yaml
+
+# include_before: YAML Config file (or list of such) to read from, before applying settings from current file
+# (i.e. the preprocessor will process the following files as headers, before the current file)
+include_before:
+
+# Excluded directories and files are those elements (or glob patterns)
+# of the source directory which we wish the preprocessor to ignore.
+exclude_dirs:
+  - .git
+  - __pycache__
+#
+exclude_files: []
+
+# Protected directories and files are those elements (or glob patterns)
+# of the destination directory which we wish the preprocessor not to delete.
+protect_dirs:
+  - /shared
+  - /assets
+  - /files
+  - /images
+#
+protect_files: []
+
+# Configure image gallery settings
+gallery_defaults:
+  images:
+    width: 1920
+    height: 1080
+    quality: 95
+  thumbnails:
+    width: 200
+    height: 200
+    quality: 95
+    method: crop
