@@ -16,7 +16,8 @@ encoding: utf-8
 
 # Configure preprocessor input/output directory settings
 ## sources: list of Markdown source files or directories to convert to HTML or recurse into
-sources: source
+sources:
+  - source
 #
 ## base_dir: Base of the source directory hierarchy specified as relative path from current file
 base_dir: .
@@ -43,9 +44,9 @@ update: false
 # include: YAML Config file (or list of such) to read from, after reading all settings from current file
 # (i.e. the preprocessor will process the current file as a header, then the following files)
 include:
-  - source/navigation.yaml
-  - source/contact.yaml
-  - source/template.yaml
+  - "source/navigation.yaml"
+  - "source/contact.yaml"
+  - "source/template.yaml"
 
 # include_before: YAML Config file (or list of such) to read from, before applying settings from current file
 # (i.e. the preprocessor will process the following files as headers, before the current file)
