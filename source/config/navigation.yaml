@@ -1,36 +1,28 @@
 navigation:
-  name: Don Willcox
-  link: index.html
+  author: Don Willcox
+  home: index.html
   pages:
-    - home:
-        name: Home
-        link: index.html
-        pages:
-    - research:
-        name: Research Gallery
-        link: research.html
-        pages:
-          - codegen:
-            name: Code Generation For Solving PDEs
-            link: codegen.html
-            pages:
-          - nucastro:
-            name: Nuclear Astrophysics
-            link: nucastro.html
-            pages:
-          - neutrinos:
-            name: Neutrino Quantum Kinetics
-            link: neutrinos.html
-            pages:
-          - ml_astro:
-            name: Machine Learning For Astrophysics
-            link: ml_astro.html
-            pages:
-    - cv:
-        name: CV
-        link: cv.html
-        pages:
-    - publications:
-        name: Publications
-        link: publications.html
-        pages:
+    - name: Home
+      link: index.html
+      pages:
+    - name: Research Gallery
+      link: research.html
+      pages:
+        - name: Code Generation For Solving PDEs
+          link: codegen.html
+          pages:
+        - name: Nuclear Astrophysics
+          link: nucastro.html
+          pages:
+        - name: Neutrino Quantum Kinetics
+          link: neutrinos.html
+          pages:
+        - name: Machine Learning For Astrophysics
+          link: ml_astro.html
+          pages:
+    - name: CV
+      link: cv.html
+      pages:
+    - name: Publications
+      link: publications.html
+      pages:

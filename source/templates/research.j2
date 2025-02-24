@@ -17,7 +17,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1 id="logo"><a href="{{ navigation.link|e }}">{{ navigation.name|e }}</a></h1>
+			<h1 id="logo"><a href="{{ navigation.home|e }}">{{ navigation.author|e }}</a></h1>
 			<nav id="nav">
 				<ul>
 					{% for page in navigation.pages %}
@@ -43,7 +43,7 @@
 			<div id="main" class="wrapper style1">
 				<div class="container">
 					<header class="major">
-						<h2>Research Gallery</h2>
+						<h2>{{ title }}</h2>
 					</header>
 
 					<!-- Research Gallery -->
@@ -58,7 +58,7 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				{% for way in contact.types %}
+				{% for way in contacts %}
 				<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
 				{% endfor %}
 			</ul>
@@ -71,8 +71,8 @@
 		</div>
 
 		<!-- Scripts -->
-		{% for script in template.scripts %}
-		<script src="{{ script|e }}"></script>
+		{% for script in scripts %}
+		<script src="{{ script.link|e }}"></script>
 		{% endfor %}
 		<!-- End Scripts -->
 	</body>

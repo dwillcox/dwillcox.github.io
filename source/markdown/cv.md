@@ -1,7 +1,7 @@
 ```#yaml
 title: Curriculum Vitae
 author: Don Willcox
-template: cv
+template: cv.j2
 encoding: utf-8
 enable_jinja: true
 ```

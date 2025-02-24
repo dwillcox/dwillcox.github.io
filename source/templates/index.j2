@@ -16,9 +16,8 @@
 		<div id="page-wrapper">
 
 		<!-- Header -->
-		<!--
         <header id="header">
-			<h1 id="logo"><a href="{{ navigation.link|e }}">{{ navigation.name|e }}</a></h1>
+			<h1 id="logo"><a href="{{ navigation.home|e }}">{{ navigation.author|e }}</a></h1>
 			<nav id="nav">
 				<ul>
 					{% for page in navigation.pages %}
@@ -38,7 +37,6 @@
 				</ul>
 			</nav>
 		</header>
-		-->
 		<!-- End Header -->
 
 		<!-- Main -->
@@ -49,7 +47,7 @@
 							<h2>Welcome!</h2>
 							<p>I am Don Willcox, a computational physicist specializing in nuclear astrophysics and high performance computing.
 							   <br />
-							   For more about my research, please visit my <a href="research_gallery.html">Research Gallery</a> or my <a href="visual_cv.html">CV</a>.
+							   For more about my research, please visit my <a href="research.html">Research Gallery</a> or my <a href="cv.html">CV</a>.
 							   <br />
 							   For more about me, simply <a href="#one" class="scrolly">read onwards</a>.
 							</p>
@@ -99,10 +97,9 @@
 		<!-- End Main -->
 
 		<!-- Footer -->
-		<!--
         <footer id="footer">
 			<ul class="icons">
-				{% for way in contact.types %}
+				{% for way in contacts %}
 				<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
 				{% endfor %}
 			</ul>
@@ -110,17 +107,14 @@
 				<li>&copy; Don Willcox. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</footer>
-		-->
 		<!-- End Footer -->
 
 		</div>
 
 		<!-- Scripts -->
-		<!--
-		{% for script in template.scripts %}
-		<script src="{{ script|e }}"></script>
+		{% for script in scripts %}
+		<script src="{{ script.link|e }}"></script>
 		{% endfor %}
-		-->
 		<!-- End Scripts -->
 	</body>
 </html>
