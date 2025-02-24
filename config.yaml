@@ -44,13 +44,13 @@ update: false
 # include: YAML Config file (or list of such) to read from, after reading all settings from current file
 # (i.e. the preprocessor will process the current file as a header, then the following files)
 include:
+  - navigation.yaml
+  - contact.yaml
+  - template.yaml
 
 # include_before: YAML Config file (or list of such) to read from, before applying settings from current file
 # (i.e. the preprocessor will process the following files as headers, before the current file)
 include_before:
-  - source/navigation.yaml
-  - source/contact.yaml
-  - source/template.yaml
 
 # Excluded directories and files are those elements (or glob patterns)
 # of the source directory which we wish the preprocessor to ignore.
