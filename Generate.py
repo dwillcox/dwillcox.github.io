@@ -1,35 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import os
 import glob
 import yaml
 from jinja2 import Environment, FileSystemLoader
-
-
-# In[2]:
-
-
-# Load YAML configuration data
-config = {}
-config_dir = os.path.join(os.getcwd(), "source/config")
-config_files = glob.glob(os.path.join(config_dir, "*.yaml"))
-
-for f in config_files:
-    file = open(f, "r")
-    config = config | yaml.safe_load(file)
-
-
-# In[3]:
-
-
-config
-
-
-# In[4]:
 
 
 # We will need a class to hold info for each markdown file
@@ -54,8 +29,13 @@ class MarkDownFile:
         # make the html target file basename
         self.htmlname = f"{self.name}.html"
         
+        # read the markdown file contents
         self.read(filename)
+
+        # sanity-check the markdown file
         self.sanity()
+
+        # finish packaging the data we have read into class data
         self.package()
     
     def read(self, filename):
@@ -114,32 +94,87 @@ class MarkDownFile:
         self.yaml["content"] = self.content
 
 
-# In[5]:
+def get_YAML(yaml_abs_path):
+    """
+    Get a specific file referenced with an absolute path to a .yaml file.
+    """
+    data = {}
+    with open(yaml_abs_path, "r") as file:
+        data = data | yaml.safe_load(file)
+    return data
 
 
-# Load all markdown files to process
-md_dir = os.path.join(os.getcwd(), "source/markdown")
-md_files = glob.glob(os.path.join(md_dir, "*.md"))
+def get_YAML_glob(yaml_rel_path):
+    """
+    Loops through all *.yaml files in the relative path
+    provided as an argument. Returns the database of YAML
+    entries as a single Python dictionary.
+    """
+    # Load YAML data into a Python dictionary
+    data_dir = os.path.join(os.getcwd(), yaml_rel_path)
+    data_files = glob.glob(os.path.join(data_dir, "*.yaml"))
 
-markdown = [MarkDownFile(mdf) for mdf in md_files]
+    data = {}
 
+    # Loop through Configuration files and Read YAML
+    for f in data_files:
+        data = data | get_YAML(f)
 
-# In[7]:
-
-
-# Iterate over markdown files and generate HTML using Jinja2
-for md in markdown:
-    j2env = Environment(loader=FileSystemLoader("source/templates"))
-    j2tmp = j2env.get_template(md.yaml["template"])
-    render_yaml = config | md.yaml
-    j2out = j2tmp.render(render_yaml)
-    output_file = os.path.join(os.getcwd(), md.htmlname)
-    with open(output_file, "w") as file:
-        file.write(j2out)
-
-
-# In[ ]:
+    # Return Dictionary of YAML Data
+    return data
 
 
+def get_mds(md_rel_path):
+    """
+    Loops through all *.md files in the relative path
+    provided as an argument. Returns a list of MarkDownFile
+    objects, one object per discovered *.md file.
+    """
+    # Load all markdown files to process
+    md_dir = os.path.join(os.getcwd(), md_rel_path)
+    md_files = glob.glob(os.path.join(md_dir, "*.md"))
+
+    # Loop through markdown files and create a list of MarkDownFile objects
+    markdown = [MarkDownFile(mdf) for mdf in md_files]
+
+    # Return List of MarkDownFile objects
+    return markdown
 
 
+def j2_md_to_html(global_config_dict, md_list, template_rel_path):
+    """
+    Loops through MarkDown objects in md_list, converting each
+    to an HTML file using Jinja2 to process the corresponding template
+    found in template_rel_path based on the global configuration dictionary
+    and the individual configuration dictionary associated with each MarkDown object.
+    """
+    # Uses Jinja2 to process each markdown object in the list
+    for md in md_list:
+        # Load template file specified by the markdown file's YAML entry
+        j2env = Environment(loader=FileSystemLoader(template_rel_path))
+        j2tmp = j2env.get_template(md.yaml["template"])
+
+        # Define configuration dictionary for the Jinja2 template rendering
+        render_config = global_config_dict | md.yaml
+
+        # Use Jinja2 to render the template and create output HTML data
+        j2out = j2tmp.render(render_config)
+
+        # Write output HTML data to an HTML file
+        output_file = os.path.join(os.getcwd(), md.htmlname)
+        with open(output_file, "w") as file:
+            file.write(j2out)
+
+
+if __name__ == "__main__":
+    # Get Global YAML configuration from all YAML files in config directory
+    global_data = get_YAML_glob("source/config")
+
+    # Add specific dependencies
+    global_data = global_data | get_YAML(os.path.join(os.getcwd(), "files", "papers.yaml"))
+
+    # Get Markdown objects to process into HTML
+    markdown = get_mds("source/markdown")
+
+    # Iterate over markdown files and generate HTML using Jinja2
+    j2_md_to_html(global_data, markdown, "source/templates")
