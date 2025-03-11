@@ -60,7 +60,7 @@ papers:
     journal: "Nature Communications, 13, 1"
     year: 2022
     link: doi.org/10.1038/s41467-022-28669-y
-    figure: pub0019/pub0019_f1.png
+    figure: pub0019/pub0019_f1_axion_vr.png
     caption: Three-dimensional simulation evolving the axion field over cosmological time, illustrating the axion energy density and axion string structures at late times.
 
   - title: "Neutrino Fast Flavor Instability in Three Dimensions"
@@ -68,7 +68,7 @@ papers:
     journal: "Physical Review D, 104, 103023"
     year: 2021
     link: doi.org/10.1103/PhysRevD.104.103023
-    figure: pub0018/pub0018_f2.png
+    figure: pub0018/pub0018_f2_emu_3d_ffi.png
     caption: Three-dimensional, all-angle Particle-in-Cell simulation of a three-flavor neutrino fast flavor instability. Volume rendering shown illustrates the fastest-growing electron-muon neutrino flavor instability, seen in shaded contours which evenly subdivide the angular electron-muon phase at 0 (blue), two-thirds pi (white), and four-thirds pi (red).
 
   - title: "Practical Effects of Integrating Temperature with Strang Split Reactions"
