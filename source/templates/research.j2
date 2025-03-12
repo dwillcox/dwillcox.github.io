@@ -42,29 +42,89 @@
 		<!-- Main -->
 			<div id="main" class="wrapper style1">
 				<div class="container">
-					<header class="major">
-						<h2>{{ title }}</h2>
-					</header>
-
 					<!-- Research Gallery -->
-					<section>
+					<section aria-labelledby="topic">
+						<header class="major">
+							<h2 id="topic">{{ title }}</h2>
+						</header>
 						<!-- Content -->
+						<section style="white-space: pre-wrap;">
+							{{ content|e }}
+						</section>
 						<!-- End Content -->
 
 						<!-- Category Links -->
+						{% if categories|length > 1 %}
+						<section>
+							<div class="container align-center">
+								<header>
+									<h3 id="navigation">Navigation</h3>
+								</header>
+								<div class="row gtr-50 gtr-uniform">
+								{% for category in categories %}
+									<div class="col-6">
+										<span class="fit">
+											<a href="#{{ category.name|e }}">{{ category.name|e }}</a>
+										</span>
+									</div>
+								{% endfor %}
+								</div>
+							</div>
+						</section>
+						{% endif %}
 						<!-- End Category Links -->
 
 						<!-- Loop Over Categories -->
+						{% for category in categories %}
+							<section aria-labelledby="{{ category.name|e }}">
 							<!-- Category Header -->
+							<header class="major">
+								<h3 id="{{ category.name|e }}">{{ category.title|e }}</h3>
+							</header>
 							<!-- End Category Header -->
 
 							<!-- Loop Over Category Entries -->
+							{% for entry in category.entries %}
 								<!-- Category Entry -->
+								<section aria-labelledby="{{ entry.name|e }}">
+									<header class="major">
+										<h4 id="{{ entry.name|e }}">{{ entry.title|e }}</h4>
+									</header>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4">
+												{% for figure in entry.figures %}
+												{% if loop.index > 1 %}
+													<hr>
+												{% endif %}
+												<div>
+													<div><span class="image fit">
+														<img src="{{ figure.link|e }}" alt="{{ figure.caption|e }}" />
+													</span></div>
+													<div>
+														{{ figure.caption|e }}
+													</div>
+												</div>
+												{% endfor %}
+											</div>
+											<div class="col-8" style="white-space: pre-wrap;">
+												{{ entry.summary|e }}		
+											</div>
+										</div>
+									</div>
+								</section>
 								<!-- End Category Entry -->
+							{% endfor %}
 							<!-- End Loop Over Category Entries -->
 
 							<!-- Category Footer/Nav -->
+							<div>
+								<a href="#topic" class="goto-prev"></a>
+							</div>
 							<!-- End Category Footer/Nav -->
+							</section>
+						{% endfor %}
 						<!-- End Loop Over Categories -->
 					</section>
 					<!-- End Research Gallery -->
