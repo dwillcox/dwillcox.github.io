@@ -16,49 +16,57 @@
 		<div id="page-wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<h1 id="logo"><a href="index.html">Don Willcox</a></h1>
+        <header id="header" class="navheader">
+			<h1 id="logo"><a href="index.html" class="navheader">Don Willcox</a></h1>
 			<nav id="nav">
 				<ul>
 					
-					<li>
+					<li class="navheader">
 						<a href="index.html">Home</a>
+						<!-- Comment out subpages until we actually write them!
 						
+						-->
 					</li>
 					
-					<li>
+					<li class="navheader">
 						<a href="research.html">Research Gallery</a>
+						<!-- Comment out subpages until we actually write them!
 						
 							<ul>
 								
-								<li>
+								<li class="navheader">
 									<a href="codegen.html">Code Generation For Solving PDEs</a>
 								</li>
 								
-								<li>
+								<li class="navheader">
 									<a href="nucastro.html">Nuclear Astrophysics</a>
 								</li>
 								
-								<li>
+								<li class="navheader">
 									<a href="neutrinos.html">Neutrino Quantum Kinetics</a>
 								</li>
 								
-								<li>
+								<li class="navheader">
 									<a href="ml_astro.html">Machine Learning For Astrophysics</a>
 								</li>
 								
 							</ul>
 						
+						-->
 					</li>
 					
-					<li>
+					<li class="navheader">
 						<a href="cv.html">CV</a>
+						<!-- Comment out subpages until we actually write them!
 						
+						-->
 					</li>
 					
-					<li>
+					<li class="navheader">
 						<a href="publications.html">Publications</a>
+						<!-- Comment out subpages until we actually write them!
 						
+						-->
 					</li>
 					
 				</ul>
@@ -151,7 +159,7 @@ Here are some examples of the code generation techniques I helped develop and th
 											<div class="col-8" style="white-space: pre-wrap;">
 												As part of the ExaStar team within the DOE Exascale Computing Project, I worked with Adam Peterson to design a code-generation tool for solving the numerical general relativity equations using the AMReX framework for block-structured adaptive mesh refinement.
 
-Although our project's immediate focus was general relativity, the Einstein equations are notoriously lengthy when expanded into numerical form. Translating hundreds of arithmetic terms into computer code would be laborious and it would be very easy to make mistakes.
+Although our project&#39;s immediate focus was general relativity, the Einstein equations are notoriously lengthy when expanded into numerical form. Translating hundreds of arithmetic terms into computer code would be laborious and it would be very easy to make mistakes.
 
 Thus, we turned to code generation based on the open-source Python package for symbolic mathematics, Sympy. We wrote a python package using Sympy to translate partial differential equations in space and time into C++ computer code computing the arithmetic operations on the variables in these equations.
 
