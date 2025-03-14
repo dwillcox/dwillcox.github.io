@@ -156,7 +156,7 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: #75d8b6; /* Palette: color for links */;
 			border: 0;
 		}
 
