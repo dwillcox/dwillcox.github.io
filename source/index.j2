@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Don E. Willcox</title>
+		<title>{{ title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,7 +17,7 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/willcox_lbl_hs.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Don E. Willcox</a></h1>
+					<h1 id="logo"><a href="#">{{ author }}</a></h1>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -29,13 +29,9 @@
 				</nav>
 				<footer>
 					<ul class="icons">
-						
-						<li><a href="mailto:eugene.willcox@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						
-						<li><a href="https://github.com/dwillcox" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						
-						<li><a href="https://www.linkedin.com/in/donaldewillcox" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						
+						{% for way in contacts %}
+						<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
+						{% endfor %}
 					</ul>
 				</footer>
 			</section>

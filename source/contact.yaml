@@ -1,10 +1,10 @@
 contacts:
   - name: "Email"
     link: "mailto:eugene.willcox@gmail.com"
-    class: "icon solid alt fa-envelope"
+    class: "icon solid fa-envelope"
   - name: "GitHub"
     link: "https://github.com/dwillcox"
-    class: "icon brands alt fa-github"
+    class: "icon brands fa-github"
   - name: "LinkedIn"
     link: "https://www.linkedin.com/in/donaldewillcox"
-    class: "icon brands alt fa-linkedin-in"
+    class: "icon brands fa-linkedin-in"

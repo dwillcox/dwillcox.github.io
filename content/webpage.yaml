@@ -1,0 +1,11 @@
+author: "Don E. Willcox"
+title: "Don E. Willcox"
+
+sequence:
+  - glance: "Welcome"
+    source: "welcome.md"
+  - glance: "Topic 1"
+    source: "topic1.md"
+  - glance: "Topic 2"
+    source: "topic2.md"
+
