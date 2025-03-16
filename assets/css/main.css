@@ -43,46 +43,6 @@ styleCasualAcademic {
 }
 
 /* Navigation Arrows */
-/* Goto Next */
-.goto-next {
-	background-image: url("images/dnarrow.svg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: block;
-	border-bottom: medium none;
-
-	height: 1.5em;
-	width: 2em;
-	margin: 0em;
-
-	position: absolute;
-	left: 2vw;
-	bottom: 2vw;
-	z-index: 2;
-}
-/* End Goto Next */
-
-/* Goto Previous */
-.goto-prev {
-	background-image: url("images/uparrow.svg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: block;
-	border-bottom: medium none;
-
-	height: 1.5em;
-	width: 2em;
-	margin: 0em;
-
-	position: absolute;
-	left: 2vw;
-	top: 2vw;
-	z-index: 2;
-}
-/* End Goto Previous */
-
 /* Goto Next Font Awesome */
 .goto-next-fa {
 	display: block;
