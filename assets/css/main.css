@@ -3032,10 +3032,10 @@ input, select, textarea {
 		#main > section > .container {
 			padding: 6em 0 4em 0;
 			overflow-y: scroll;
-			scrollbar-color: #5ec7ff #eeae7b;
+			scrollbar-color: #5ec7ff #35393a;
 		}
 
-		#main > section > .container.aln-top {
+		#main > section > .container.align-top {
 			padding: 0 0 4em 0;
 		}
 
