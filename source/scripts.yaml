@@ -1,9 +1,0 @@
-scripts:
-  - link: "assets/js/jquery.min.js"
-  - link: "assets/js/jquery.scrolly.min.js"
-  - link: "assets/js/jquery.dropotron.min.js"
-  - link: "assets/js/jquery.scrollex.min.js"
-  - link: "assets/js/browser.min.js"
-  - link: "assets/js/breakpoints.min.js"
-  - link: "assets/js/util.js"
-  - link: "assets/js/main.js"

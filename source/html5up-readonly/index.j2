@@ -9,14 +9,14 @@
 		<title>{{ title|e }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="source/html5up-readonly/assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/willcox_lbl_hs.jpg" alt="" /></span>
+					<span class="image avatar"><img src="source/images/willcox_lbl_hs.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">{{ author|e }}</a></h1>
 				</header>
 				<nav id="nav">
@@ -36,6 +36,13 @@
 						<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
 						{% endfor %}
 					</ul>
+
+					<!-- Copyright Notice -->
+					<ul>
+						<li>&copy; {{ author|e }}. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+					<!-- End Copyright Notice -->
 				</footer>
 			</section>
 
@@ -277,17 +284,6 @@
 								<div class="container fxg10">
 									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
 								</div>
-
-								<!-- Copyright Notice -->
-								<div class="fxg1 flexrow">
-									<div style="padding-left:1em">
-										&copy; {{ author|e }}. All rights reserved.
-									</div>
-									<div style="padding-right:1em">
-										Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</div>
-								</div>
-								<!-- End Copyright Notice -->
 							</section>
 
 					</div>
@@ -295,13 +291,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="source/html5up-readonly/assets/js/jquery.min.js"></script>
+			<script src="source/html5up-readonly/assets/js/jquery.scrollex.min.js"></script>
+			<script src="source/html5up-readonly/assets/js/jquery.scrolly.min.js"></script>
+			<script src="source/html5up-readonly/assets/js/browser.min.js"></script>
+			<script src="source/html5up-readonly/assets/js/breakpoints.min.js"></script>
+			<script src="source/html5up-readonly/assets/js/util.js"></script>
+			<script src="source/html5up-readonly/assets/js/main.js"></script>
 
 	</body>
 </html>

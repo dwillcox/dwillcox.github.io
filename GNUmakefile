@@ -1,5 +1,5 @@
 all:
-	python Publisher/Publisher.py
+	python generate_website.py
 
 clean:
 	rm -f *.html *~
