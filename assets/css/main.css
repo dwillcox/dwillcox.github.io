@@ -187,7 +187,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4;
+		/* border-bottom: solid 1px #e4e4e4; */
 		color: inherit;
 		text-decoration: none;
 	}
@@ -207,14 +207,22 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2 {
+		display: inline-block;
 		color: #6be7b4;
 		font-weight: 700;
 		line-height: 1em;
-		margin: 0 0 0.5625em 0;
+		margin: 0.1em 0 0.1em 0;
+	}
+
+	h3, h4, h5, h6 {
+		color: #6be7b4;
+		font-weight: 700;
+		line-height: 1em;
+		margin: 0.5em 0 0.5em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1838,7 +1846,7 @@ input, select, textarea {
 	header p {
 		color: #ffffff;
 		position: relative;
-		margin: 0 0 1.6875em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	header h2 + p {
@@ -2754,7 +2762,7 @@ input, select, textarea {
 
 	.features article {
 		border: solid 0.1em #eeae7b;
-		border-radius: 1em;
+		border-radius: 0.5em;
 		padding: 0.2em;
 		margin: 0.5em;
 	}
@@ -3033,10 +3041,6 @@ input, select, textarea {
 
 /* Main */
 	#main > section {
-		border-top: solid 0.2em #5ec7ff;
-		border-right: solid 0.2em #5ec7ff;
-		border-bottom: solid 0.2em #5ec7ff;
-		border-left: solid 0.2em #5ec7ff;
 		height: 100vh;
 		position: relative;
 		top: 0;
@@ -3044,6 +3048,13 @@ input, select, textarea {
 	
 	#main > section > .container.scrollbar {
 		overscroll-behavior: contain;
+		border-top: solid 0.2em #5ec7ff;
+		border-right: solid 0.2em #5ec7ff;
+		border-bottom: solid 0.2em #5ec7ff;
+		border-left: solid 0.2em #5ec7ff;
+		border-radius: 0.5em;
+		max-width: 100%;
+		scrollbar-color: #f777c1 #35393a;
 	}
 	
 	/* Size a scene view to either the full available viewer height
@@ -3064,7 +3075,7 @@ input, select, textarea {
 
 		.scrollbar {
 			overflow-y: scroll;
-			scrollbar-color: #5ec7ff #35393a;
+			scrollbar-color: #f777c1 #35393a;
 			flex: auto;
 			height: 0vh;
 		}

@@ -77,21 +77,27 @@
 									<a href="#s{{ loop.index + 1 }}" class="fas fa-arrow-down goto-next-fa scrolly"></a>
 								{% endif %}
 
-								{% if scene.title is defined or scene.subtitle is defined %}
+								{% if scene.title is defined %}
 									<header class="major align-top align-center">
-										<a href="#s{{ loop.index }}" class="scrolly">
-											{% if scene.title is defined %}
-												<h2>{{ scene.title }}</h2>
-											{% endif %}
-
-											{% if scene.subtitle is defined %}
-												<p>{{ scene.subtitle }}</p>
-											{% endif %}
-										</a>
+										{% if scene.title is defined %}
+											<h2>
+												<a href="#s{{ loop.index }}" class="scrolly">
+													{{ scene.title }}
+												</a>
+											</h2>
+										{% endif %}
 									</header>
 								{% endif %}
-									
+
 								<div class="container align-top align-center max {{ scene_flex }} {{ scene_scroll }} col">
+
+									{% if scene.subtitle is defined %}
+										<header class="major align-top align-center">
+											{% if scene.subtitle is defined %}
+												<h3>{{ scene.subtitle }}</h3>
+											{% endif %}
+										</header>
+									{% endif %}
 								
 									{% for entry in scene.content.entries %}
 
