@@ -27,6 +27,7 @@
 styleCasualAcademic {
 		/* Blackboard */
 		color: #35393a;
+		color: #92b7c0;
 
 		/* Pastels */
 		color: #5ec7ff;
@@ -49,7 +50,7 @@ styleCasualAcademic {
 	border-bottom: medium none;
 	margin: 0.1em;
 	padding: 0vw;
-	font-size: 2vw;
+	font-size: 3.5em;
 	color: #f777c1;
 
 	position: absolute;
@@ -65,7 +66,7 @@ styleCasualAcademic {
 	border-bottom: medium none;
 	margin: 0.1em;
 	padding: 0vw;
-	font-size: 2vw;
+	font-size: 3.5em;
 	color: #f777c1;
 
 	position: absolute;
@@ -2884,10 +2885,17 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 0.2em #5ec7ff;
+					border-top: solid 0.1em #92b7c0;
+					border-bottom: solid 0.1em #92b7c0;
 					display: block;
 					padding: 0;
 				}
+
+				/*
+					#header > nav ul li:first-child {
+						border-top: 0;
+					}
+				*/
 
 					#header > nav ul li a {
 						-moz-transition: none;
@@ -2903,12 +2911,11 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #35393a;
+							border-top: solid 0.2em #5ec7ff;
+							border-bottom: solid 0.2em #5ec7ff;
 							color: #f777c1 !important;
 						}
 
-					#header > nav ul li:first-child {
-						border-top: 0;
-					}
 
 /* Wrapper */
 

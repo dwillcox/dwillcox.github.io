@@ -73,12 +73,8 @@
 									<a href="#s{{ loop.index - 1 }}" class="fas fa-arrow-up goto-prev-fa scrolly"></a>
 								{% endif %}
 
-								{% if loop.revindex > 1 %}
-									<a href="#s{{ loop.index + 1 }}" class="fas fa-arrow-down goto-next-fa scrolly"></a>
-								{% endif %}
-
 								{% if scene.title is defined %}
-									<header class="major align-top align-center">
+									<header class="major align-center">
 										{% if scene.title is defined %}
 											<h2>
 												<a href="#s{{ loop.index }}" class="scrolly">
@@ -87,6 +83,10 @@
 											</h2>
 										{% endif %}
 									</header>
+								{% endif %}
+
+								{% if loop.revindex > 1 %}
+									<a href="#s{{ loop.index + 1 }}" class="fas fa-arrow-down goto-next-fa scrolly"></a>
 								{% endif %}
 
 								<div class="container align-top align-center max {{ scene_flex }} {{ scene_scroll }} col">
