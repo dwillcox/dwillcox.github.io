@@ -47,14 +47,14 @@ styleCasualAcademic {
 .goto-next-fa {
 	display: block;
 	border-bottom: medium none;
-	margin: 0em;
-	padding: 2vw;
+	margin: 0.1em;
+	padding: 0vw;
 	font-size: 2vw;
-	color: #5ec7ff;
+	color: #f777c1;
 
 	position: absolute;
-	left: 2vw;
-	bottom: 2vw;
+	right: 1vw;
+	top: 1vw;
 	z-index: 2;
 }
 /* End Goto Next Font Awesome */
@@ -63,14 +63,14 @@ styleCasualAcademic {
 .goto-prev-fa {
 	display: block;
 	border-bottom: medium none;
-	margin: 0em;
-	padding: 2vw;
+	margin: 0.1em;
+	padding: 0vw;
 	font-size: 2vw;
-	color: #5ec7ff;
+	color: #f777c1;
 
 	position: absolute;
-	left: 2vw;
-	top: 2vw;
+	left: 1vw;
+	top: 1vw;
 	z-index: 2;
 }
 /* End Goto Previous Font Awesome */
@@ -2750,40 +2750,27 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-/* Features */
+/* Features and Articles */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
+		border: solid 0.1em #eeae7b;
+		border-radius: 1em;
+		padding: 0.2em;
+		margin: 0.5em;
 	}
-
-		.features article:first-child {
-			border-top: 0;
-			padding-top: 0;
-		}
-
-		.features article .image {
-			display: inline-block;
-			padding-right: 2.5em;
-			vertical-align: middle;
-			width: 48%;
-		}
-
-			.features article .image img {
-				display: block;
-				width: 100%;
-			}
 
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			max-width: 100%;
 		}
 
-			.features article .inner > :last-child {
-				margin-bottom: 0;
-			}
+	article.inner > .image {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+	
 
 /* Header */
 
@@ -2923,90 +2910,124 @@ input, select, textarea {
 	}
 
 /* Flexbox Classes */
-	.flexcol {
-		/* Specify CSS Flexbox Column */
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
+	.flex {
 		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		-moz-align-items: stretch;
-		-webkit-align-items: stretch;
-		-ms-align-items: stretch;
-		align-items: stretch;
-		/* End Specify CSS Flexbox Column */
-	}
-
-	.flexrow {
-		/* Specify CSS Flexbox Row */
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		-moz-align-items: stretch;
-		-webkit-align-items: stretch;
-		-ms-align-items: stretch;
-		align-items: stretch;
-		/* End Specify CSS Flexbox Row */
 	}
 	
-	.fxg1 {
+	.flex.auto {
+		flex: auto
+	}
+	
+	.flex.col {
+		flex-direction: column;
+	}
+	
+	.flex.row {
+		flex-direction: row;
+	}
+	
+	.flex.space-between {
+		justify-content: space-between;
+	}
+
+	.flex.space-around {
+		justify-content: space-around;
+	}
+	
+	.flex.cross-stretch {
+		align-items: stretch;
+	}
+
+	.flex.wrap {
+		flex-wrap: wrap;
+	}
+	
+	.flex.grow0 {
+		flex-grow: 0;
+	}
+
+	.flex.grow1 {
 		flex-grow: 1;
 	}
 
-	.fxg2 {
+	.flex.grow2 {
 		flex-grow: 2;
 	}
 
-	.fxg3 {
+	.flex.grow3 {
 		flex-grow: 3;
 	}
 
-	.fxg4 {
+	.flex.grow4 {
 		flex-grow: 4;
 	}
 
-	.fxg5 {
+	.flex.grow5 {
 		flex-grow: 5;
 	}
 
-	.fxg6 {
+	.flex.grow6 {
 		flex-grow: 6;
 	}
 
-	.fxg7 {
+	.flex.grow7 {
 		flex-grow: 7;
 	}
 
-	.fxg8 {
+	.flex.grow8 {
 		flex-grow: 8;
 	}
 
-	.fxg9 {
+	.flex.grow9 {
 		flex-grow: 9;
 	}
 
-	.fxg10 {
+	.flex.grow10 {
 		flex-grow: 10;
+	}
+
+	.flex.shrink0 {
+		flex-shrink: 0;
+	}
+
+	.flex.shrink1 {
+		flex-shrink: 1;
+	}
+
+	.flex.shrink2 {
+		flex-shrink: 2;
+	}
+
+	.flex.shrink3 {
+		flex-shrink: 3;
+	}
+
+	.flex.shrink4 {
+		flex-shrink: 4;
+	}
+
+	.flex.shrink5 {
+		flex-shrink: 5;
+	}
+
+	.flex.shrink6 {
+		flex-shrink: 6;
+	}
+
+	.flex.shrink7 {
+		flex-shrink: 7;
+	}
+
+	.flex.shrink8 {
+		flex-shrink: 8;
+	}
+
+	.flex.shrink9 {
+		flex-shrink: 9;
+	}
+
+	.flex.shrink10 {
+		flex-shrink: 10;
 	}
 /* End Flexbox Classes */
 
@@ -3020,7 +3041,11 @@ input, select, textarea {
 		position: relative;
 		top: 0;
 	}
-
+	
+	#main > section > .container.scrollbar {
+		overscroll-behavior: contain;
+	}
+	
 	/* Size a scene view to either the full available viewer height
 	   or, if we are in portrait mode with a titleBar, subtract the titleBar thickness. */
 	@media screen and (max-width: 1024px) {
@@ -3031,12 +3056,17 @@ input, select, textarea {
 
 		#main > section > .container {
 			padding: 6em 0 4em 0;
-			overflow-y: scroll;
-			scrollbar-color: #5ec7ff #35393a;
 		}
 
 		#main > section > .container.align-top {
 			padding: 0 0 4em 0;
+		}
+
+		.scrollbar {
+			overflow-y: scroll;
+			scrollbar-color: #5ec7ff #35393a;
+			flex: auto;
+			height: 0vh;
 		}
 
 	/*

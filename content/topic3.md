@@ -1,6 +1,6 @@
 ```yaml
-title: Welcome
-subtitle: Welcome to my webpage!
+title: Topic 3
+subtitle: Topic 3 is Barely An Inconvenience
 ```
 
 Here is some welcome text that tells you what to expect.

@@ -21,10 +21,13 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#section1" class="active">About</a></li>
-						<li><a href="#section2">Things I Can Do</a></li>
-						<li><a href="#section3">A Few Accomplishments</a></li>
-						<li><a href="#section4">Contact</a></li>
+					{% for scene in sequence %}
+						{% if loop.index == 1 %}
+							<li><a href="#s{{ loop.index }}" class="active">{{ scene.glance|e }}</a></li>
+						{% else %}
+							<li><a href="#s{{ loop.index }}">{{ scene.glance|e }}</a></li>
+						{% endif %}
+					{% endfor %}
 					</ul>
 				</nav>
 				<footer>
@@ -41,6 +44,140 @@
 
 				<!-- Main -->
 					<div id="main">
+						<!--
+						Top/Serial/Parallel/Serial
+
+						for entry in scene.content.entries:
+							if class != ParallelSet:
+								// put entry in a serial div
+							else:
+								for serial_entry in entry.entries:
+									// put serial_entry in a parallel div
+									for e in serial_entry.entries:
+										// put e in a serial div
+										
+						At the moment the problem is too many scrollbars.
+
+						Every container that overflows scrolls instead of the whole page.
+
+						Also, getting the rows to work is harder than I thought, might need Grid or something like that ...
+						-->
+						{% for scene in sequence %}
+
+							<section id="s{{ loop.index }}" style="height: 100vh" class="flex col auto">
+
+								{% set scene_flex = "flex grow1 shrink1 auto" %}
+								{% set scene_scroll = "scrollbar" %}
+
+								{% if loop.index > 1 %}
+									<a href="#s{{ loop.index - 1 }}" class="fas fa-arrow-up goto-prev-fa scrolly"></a>
+								{% endif %}
+
+								{% if loop.revindex > 1 %}
+									<a href="#s{{ loop.index + 1 }}" class="fas fa-arrow-down goto-next-fa scrolly"></a>
+								{% endif %}
+
+								{% if scene.title is defined or scene.subtitle is defined %}
+									<header class="major align-top align-center">
+										<a href="#s{{ loop.index }}" class="scrolly">
+											{% if scene.title is defined %}
+												<h2>{{ scene.title }}</h2>
+											{% endif %}
+
+											{% if scene.subtitle is defined %}
+												<p>{{ scene.subtitle }}</p>
+											{% endif %}
+										</a>
+									</header>
+								{% endif %}
+									
+								<div class="container align-top align-center max {{ scene_flex }} {{ scene_scroll }} col">
+								
+									{% for entry in scene.content.entries %}
+
+										<div class="container max {{ scene_flex }} col">
+
+											{% if entry.class == "ParallelSet" %}
+
+												<div class="features {{ scene_flex }} row wrap space-around">
+
+													{% for sentry in entry.entries %}
+
+														<article class="inner {{ scene_flex }} col">
+
+															{% if sentry.attributes.name is defined %}
+																<h3>{{ sentry.attributes.name }}</h3>
+															{% endif %}
+															
+															<div class="{{ scene_flex }} col">
+
+																{% for xobj in sentry.entries %}
+
+																	{% if xobj.class=="Text" %}
+																		<div class="{{ scene_flex }} col">
+																			{{ xobj.attributes.content }}
+																		</div>
+																	{% endif %}
+
+																	{% if xobj.class=="Figure" %}
+																		<div class="{{ scene_flex }} col">
+																			<img class="image" src="{{ xobj.attributes.relpath }}" alt="{{ xobj.attributes.caption }}"/>
+
+																			{% if xobj.attributes.title is defined %}
+																				<h4>{{ xobj.attributes.title }}</h4>
+																			{% endif %}
+
+																			{% if xobj.attributes.caption is defined %}
+																				{{ xobj.attributes.caption }}
+																			{% endif %}
+																		</div>
+																	{% endif %}
+
+																{% endfor %}
+
+															</div>
+
+														</article>
+
+													{% endfor %}
+
+												</div>
+
+											{% else %}
+
+												{% if entry.class=="Text" %}
+													<div class="{{ scene_flex }} col">
+														{{ entry.attributes.content }}
+													</div>
+												{% endif %}
+
+												{% if entry.class=="Figure" %}
+													<div class="{{ scene_flex }} col">
+														<a href="#" class="image">
+															<img src="{{ entry.attributes.relpath }}" alt="{{ entry.attributes.caption }}"/>
+														</a>
+
+														{% if entry.attributes.title is defined %}
+															<h4>{{ entry.attributes.title }}</h4>
+														{% endif %}
+
+														{% if entry.attributes.caption is defined %}
+															{{ entry.attributes.caption }}
+														{% endif %}
+													</div>
+												{% endif %}
+
+											{% endif %}
+
+										</div>
+
+									{% endfor %}
+
+								</div>
+
+							</section>
+
+						{% endfor %}
 
 						<!-- One -->
 							<section id="section1" style="height: 100vh" class="flexcol">
