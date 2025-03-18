@@ -18,7 +18,7 @@ if __name__ == "__main__":
     reader = ReaderYAML()
 
     # Get Webpage configuration data from all YAML files in source directory
-    config = reader.glob(os.path.join(cwd, "source"))
+    config = reader.read(os.path.join(cwd, "source", "contact.yaml"))
 
     # Read Webpage Sequence specification from YAML file in content directory
     sequence_path = os.path.join(cwd, "source", "webpage.yaml")
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     sequence = Sequence.from_path(sequence_path)
 
     # Identify HTML template(s) for the website
-    templates = glob.glob(os.path.join(cwd, "source", "*.j2"))
+    templates = glob.glob(os.path.join(cwd, "source", "html5up-readonly", "*.j2"))
 
     # Render Webpages from Sequence
     with Webpage(sequence) as webpage:

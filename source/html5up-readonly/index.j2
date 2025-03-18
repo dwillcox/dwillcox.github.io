@@ -9,14 +9,14 @@
 		<title>{{ title|e }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="source/html5up-readonly/assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="source/images/willcox_lbl_hs.jpg" alt="" /></span>
+					<span class="image avatar"><img src="source/willcox_lbl_hs.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">{{ author|e }}</a></h1>
 				</header>
 				<nav id="nav">
@@ -31,14 +31,16 @@
 					</ul>
 				</nav>
 				<footer>
+					<!-- Contact Icons -->
 					<ul class="icons">
 						{% for way in contacts %}
 						<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
 						{% endfor %}
 					</ul>
+					<!-- End Contact Icons -->
 
 					<!-- Copyright Notice -->
-					<ul>
+					<ul class="icons">
 						<li>&copy; {{ author|e }}. All rights reserved.</li>
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
@@ -51,24 +53,7 @@
 
 				<!-- Main -->
 					<div id="main">
-						<!--
-						Top/Serial/Parallel/Serial
 
-						for entry in scene.content.entries:
-							if class != ParallelSet:
-								// put entry in a serial div
-							else:
-								for serial_entry in entry.entries:
-									// put serial_entry in a parallel div
-									for e in serial_entry.entries:
-										// put e in a serial div
-										
-						At the moment the problem is too many scrollbars.
-
-						Every container that overflows scrolls instead of the whole page.
-
-						Also, getting the rows to work is harder than I thought, might need Grid or something like that ...
-						-->
 						{% for scene in sequence %}
 
 							<section id="s{{ loop.index }}" style="height: 100vh" class="flex col auto">
@@ -291,13 +276,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="source/html5up-readonly/assets/js/jquery.min.js"></script>
-			<script src="source/html5up-readonly/assets/js/jquery.scrollex.min.js"></script>
-			<script src="source/html5up-readonly/assets/js/jquery.scrolly.min.js"></script>
-			<script src="source/html5up-readonly/assets/js/browser.min.js"></script>
-			<script src="source/html5up-readonly/assets/js/breakpoints.min.js"></script>
-			<script src="source/html5up-readonly/assets/js/util.js"></script>
-			<script src="source/html5up-readonly/assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
