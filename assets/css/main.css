@@ -153,7 +153,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #35393a; /* palette */
+		background: #2b1a38; /* palette */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1878,7 +1878,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #f777c1; /* palette */
+		color: #6be7b4; /* palette */
 		font-size: 3.5em;
 	}
 
@@ -2911,16 +2911,16 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #35393a;
-							border-top: solid 0.2em #5ec7ff;
-							border-bottom: solid 0.2em #5ec7ff;
-							color: #f777c1 !important;
+							border-top: solid 0.1em #5ec7ff;
+							border-bottom: solid 0.1em #5ec7ff;
+							color: #6be7b4 !important;
 						}
 
 
 /* Wrapper */
 
 	#wrapper {
-		background: #35393a; /* palette */
+		background: #2b1a38; /* palette */
 		padding-right: 23em;
 	}
 
@@ -3047,6 +3047,7 @@ input, select, textarea {
 /* End Flexbox Classes */
 
 /* Main */
+
 	#main > section {
 		height: 100vh;
 		position: relative;
@@ -3055,11 +3056,12 @@ input, select, textarea {
 	
 	#main > section > .container.scrollbar {
 		overscroll-behavior: contain;
-		border-top: solid 0.2em #5ec7ff;
-		border-right: solid 0.2em #5ec7ff;
-		border-bottom: solid 0.2em #5ec7ff;
-		border-left: solid 0.2em #5ec7ff;
-		border-radius: 0.5em;
+		background: #35393a; /* palette */
+		border-top: solid 0.1em #5ec7ff;
+		border-right: solid 0.1em #5ec7ff;
+		border-bottom: solid 0.1em #5ec7ff;
+		border-left: solid 0.1em #5ec7ff;
+		border-radius: 0.2em;
 		max-width: 100%;
 		scrollbar-color: #f777c1 #35393a;
 	}
