@@ -1,15 +1,18 @@
 ```yaml
-title: Topic 3
-subtitle: Topic 3 is Barely An Inconvenience
+title: Publications
+number_headings: True
 ```
 
-Here is some welcome text that tells you what to expect.
+Collaboration is how I do research, as you can see from looking over my publication record.
 
-But this section is printed in normal font, it is not part of the title or subtitle.
+# Publication Listings
 
-# First Content
+- [Publications (PDF)](research/willcox_publications.pdf)
+- [Google Scholar Page](https://scholar.google.com/citations?hl=en&user=5Ns_t38AAAAJ)
+- [Publications on NASA ADS](https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22willcox%2C%20d.%20e.%22%20year%3A2016-&sort=date%20desc%2C%20bibcode%20desc)
+- [Preprints on the arXiv](https://arxiv.org/search/astro-ph?searchtype=author&query=Willcox,+D+E)
 
-This text explains the first content.
+---
 
 # Second Content
 

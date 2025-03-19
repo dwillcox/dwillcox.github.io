@@ -1,17 +1,14 @@
 author: "Don E. Willcox"
 title: "Don E. Willcox"
 
-sequence:
-  - glance: "Welcome"
-    source: "welcome.md"
-  - glance: "Topic 1"
-    source: "topic1.md"
-  - glance: "Topic 2"
-    source: "topic2.md"
-  - glance: "Topic 3"
-    source: "topic3.md"
-
-# A Scene is a set of sets.
-# A Sequence is a set of Scenes
-# So we need to store a data structure that is a set of sets of sets ...
-# Fortunately Python lists work well for this sort of thing. Each entry is a list of its own, recursively.
+Compendium:
+  name: Research Website
+  Sequences:
+    - name: Welcome
+      Scenes:
+        - glance: "Welcome"
+          source: "welcome.md"
+        - glance: "Topic 1"
+          source: "topic1.md"
+        - glance: "Topic 2"
+          source: "topic2.md"
