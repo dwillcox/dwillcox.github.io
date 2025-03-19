@@ -3,34 +3,45 @@
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	With extensive modifications by D. E. Willcox
 -->
 <html>
+
 	<head>
 		<title>{{ title|e }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Header -->
+
 			<section id="header">
+
 				<header>
 					<span class="image avatar"><img src="source/willcox_lbl_hs.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">{{ author|e }}</a></h1>
 				</header>
+
 				<nav id="nav">
 					<ul>
-					{% for scene in sequence %}
+					{% for sequence in Sequences %}
+					{% for scene in sequence.Scenes %}
 						{% if loop.index == 1 %}
 							<li><a href="#s{{ loop.index }}" class="active">{{ scene.glance|e }}</a></li>
 						{% else %}
 							<li><a href="#s{{ loop.index }}">{{ scene.glance|e }}</a></li>
 						{% endif %}
 					{% endfor %}
+					{% endfor %}
 					</ul>
 				</nav>
+
 				<footer>
+
 					<!-- Contact Icons -->
 					<ul class="icons">
 						{% for way in contacts %}
@@ -45,8 +56,11 @@
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 					<!-- End Copyright Notice -->
+
 				</footer>
+
 			</section>
+		<!-- End Header -->
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -54,7 +68,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						{% for scene in sequence %}
+						{% for sequence in Sequences %}
+						{% for scene in sequence.Scenes %}
 
 							<section id="s{{ loop.index }}" style="height: 100vh" class="flex col auto">
 
@@ -176,104 +191,13 @@
 							</section>
 
 						{% endfor %}
-
-						<!-- One -->
-							<section id="section1" style="height: 100vh" class="flexcol">
-								<div class="container">
-									<header class="major container align-top align-center">
-										<h2>Read Only</h2>
-
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
-									</header>
-								</div>
-								<a href="#section2" class="fas fa-arrow-down goto-next-fa scrolly"></a>
-							</section>
-
-						<!-- Two -->
-							<section id="section2" style="height: 100vh" class="flexcol">
-								<a href="#section1" class="fas fa-arrow-up goto-prev-fa scrolly"></a>
-
-								<div>
-									<header class="major container align-top align-center">
-										<h2>Things I Can Do</h2>
-										<p>
-											I can do many things. Some of them even well.
-										</p>
-									</header>
-								</div>
-
-								<div class="container">
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
-
-								<div class="container">
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-								</div>
-
-								<a href="#section3" class="fas fa-arrow-down goto-next-fa scrolly"></a>
-							</section>
-
-						<!-- Three -->
-							<section id="section3" style="height: 100vh" class="flexcol">
-								<a href="#section2" class="fas fa-arrow-up goto-prev-fa scrolly"></a>
-								<div class="container">
-									<header class="major container align-top align-center">
-										<h2>A Few Accomplishments</h2>
-										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									</header>
-
-									<div class="container features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-								<a href="#section4" class="fas fa-arrow-down goto-next-fa scrolly"></a>
-							</section>
-
-						<!-- Four -->
-							<section id="section4" style="height: 100vh" class="flexcol">
-								<a href="#section3" class="fas fa-arrow-up goto-prev-fa scrolly"></a>
-								<div class="fxg2">
-									<header class="major container align-top align-center">
-										<h2>Credits</h2>
-									</header>
-								</div>
-
-								<div class="container fxg10">
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-								</div>
-							</section>
+						{% endfor %}
 
 					</div>
 				<!-- End Main -->
+
 			</div>
+		<!-- End Wrapper -->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -283,6 +207,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<!-- End Scripts -->
 
 	</body>
 </html>
