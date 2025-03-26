@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+		<!-- Header -->
+        <header id="header" class="navheader">
+			<h1 id="logo"><a href="{{ navigation.home|e }}" class="navheader">{{ navigation.author|e }}</a></h1>
+			<nav id="nav">
+				<ul>
+					{% for page in navigation.pages %}
+					<li class="navheader">
+						<a href="{{ page.link|e }}">{{ page.name|e }}</a>
+						<!-- Comment out subpages until we actually write them!
+						{% if page.pages %}
+							<ul>
+								{% for subpage in page.pages %}
+								<li class="navheader">
+									<a href="{{ subpage.link|e }}">{{ subpage.name|e }}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+						-->
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</header>
+		<!-- End Header -->
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<!-- Research Gallery -->
+					<section aria-labelledby="topic">
+						<header class="major">
+							<h2 id="topic">{{ title }}</h2>
+						</header>
+						<!-- Content -->
+						<section style="white-space: pre-wrap;">
+							{{ content|e }}
+						</section>
+						<!-- End Content -->
+
+						<!-- Category Links -->
+						{% if categories|length > 1 %}
+						<section>
+							<div class="container align-center">
+								<header>
+									<h3 id="navigation">Navigation</h3>
+								</header>
+								<div class="row gtr-50 gtr-uniform">
+								{% for category in categories %}
+									<div class="col-6">
+										<span class="fit">
+											<a href="#{{ category.name|e }}">{{ category.name|e }}</a>
+										</span>
+									</div>
+								{% endfor %}
+								</div>
+							</div>
+						</section>
+						{% endif %}
+						<!-- End Category Links -->
+
+						<!-- Loop Over Categories -->
+						{% for category in categories %}
+							<section aria-labelledby="{{ category.name|e }}">
+							<!-- Category Header -->
+							<header class="major">
+								<h3 id="{{ category.name|e }}">{{ category.title|e }}</h3>
+							</header>
+							<!-- End Category Header -->
+
+							<!-- Loop Over Category Entries -->
+							{% for entry in category.entries %}
+								<!-- Category Entry -->
+								<section aria-labelledby="{{ entry.name|e }}">
+									<header class="major">
+										<h4 id="{{ entry.name|e }}">{{ entry.title|e }}</h4>
+									</header>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4">
+												{% for figure in entry.figures %}
+												{% if loop.index > 1 %}
+													<hr>
+												{% endif %}
+												<div>
+													<div><span class="image fit">
+														<img src="{{ figure.link|e }}" alt="{{ figure.caption|e }}" />
+													</span></div>
+													<div>
+														{{ figure.caption|e }}
+													</div>
+												</div>
+												{% endfor %}
+											</div>
+											<div class="col-8" style="white-space: pre-wrap;">
+												{{ entry.summary|e }}		
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- End Category Entry -->
+							{% endfor %}
+							<!-- End Loop Over Category Entries -->
+
+							<!-- Category Footer/Nav -->
+							<div>
+								<a href="#topic" class="goto-prev"></a>
+							</div>
+							<!-- End Category Footer/Nav -->
+							</section>
+						{% endfor %}
+						<!-- End Loop Over Categories -->
+					</section>
+					<!-- End Research Gallery -->
+
+				</div>
+			</div>
+		<!-- End Main -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				{% for way in contacts %}
+				<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
+				{% endfor %}
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Don Willcox. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+		<!-- End Footer -->
+
+		</div>
+
+		<!-- Scripts -->
+		{% for script in scripts %}
+		<script src="{{ script.link|e }}"></script>
+		{% endfor %}
+		<!-- End Scripts -->
+	</body>
+</html>

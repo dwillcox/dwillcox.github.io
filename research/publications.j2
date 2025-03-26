@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="navheader">
+			<h1 id="logo"><a href="{{ navigation.home|e }}" class="navheader">{{ navigation.author|e }}</a></h1>
+			<nav id="nav">
+				<ul>
+					{% for page in navigation.pages %}
+					<li class="navheader">
+						<a href="{{ page.link|e }}">{{ page.name|e }}</a>
+						<!-- Comment out subpages until we actually write them!
+						{% if page.pages %}
+							<ul>
+								{% for subpage in page.pages %}
+								<li class="navheader">
+									<a href="{{ subpage.link|e }}">{{ subpage.name|e }}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+						-->
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</header>
+		<!-- End Header -->
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Publications</h2>
+					</header>
+
+					<!-- Links to Publications -->
+						<section>
+							<h3>Publication Links</h3>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-4 col-6-medium"><span class="fit">
+										<a href="research/willcox_publications.pdf">Publications (PDF)</a>
+									</span></div>
+
+									<div class="col-4 col-6-medium"><span class="fit">
+										<a href="https://scholar.google.com/citations?hl=en&user=5Ns_t38AAAAJ">Google Scholar Page</a>
+									</span></div>
+
+									<div class="col-4 col-6-medium"><span class="fit"></span>
+										<a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22willcox%2C%20d.%20e.%22%20year%3A2016-&sort=date%20desc%2C%20bibcode%20desc">Publications on NASA ADS</a>
+									</span></div>
+
+									<div class="col-4 col-6-medium"><span class="fit"></span>
+										<a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Willcox,+D+E">Preprints on the arXiv</a>
+									</span></div>
+								</div>	
+							</div>
+						</section>
+					<!-- End Links to Publications -->
+
+					<hr />
+
+					<!-- List of Publications -->
+						<section>
+							<!-- <h3>Publication Gallery</h3> -->
+                            {% for paper in papers %}
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+                                    <!-- Text Content -->
+                                    <div class="col-8">
+                                    <h3>{{ loop.revindex }}.  {{ paper.title|e }}</h3>
+                                    <ul class="alt">
+                                        <li>{{ paper.authors|e }}</li>
+                                        <li>{{ paper.year|e }}, {{ paper.journal|e }}</li>
+                                        <li><a href="https://{{ paper.link|e }}">{{ paper.link|e }}</a></li>
+                                        <li>Shown: {{ paper.caption|e }}</li>
+                                    </ul>
+                                    </div>
+                                    <!-- End Text Content -->
+                                    <!----------------------->
+                                    <!-- Image Content -->
+                                    <div class="col-4">
+                                        <span class="image fit">
+                                            <img src="files/papers/{{ paper.figure|e }}" alt="{{ paper.caption|e }}" />
+                                        </span>
+                                    </div>
+                                    <!-- End Image Content -->
+								</div>
+							</div>
+                            <hr />
+                            {% endfor %}
+						</section>
+                    <!-- End List of Publications -->
+				</div>
+			</div>
+		<!-- End Main -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				{% for way in contacts %}
+				<li><a href="{{ way.link|e }}" class="{{ way.class|e }}"><span class="label">{{ way.name|e }}</span></a></li>
+				{% endfor %}
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Don Willcox. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li>The JOSS logo is used without modification under the CC BY 4.0 License.</li>
+			</ul>
+		</footer>
+		<!-- End Footer -->
+
+		</div>
+
+		<!-- Scripts -->
+		{% for script in scripts %}
+		<script src="{{ script.link|e }}"></script>
+		{% endfor %}
+		<!-- End Scripts -->
+	</body>
+</html>

@@ -1,6 +1,6 @@
 /.quarto/
 /_site/
 /Publisher/
-/research/
+/research/publications/*/*.pdf
 /__pycache__/
 
