@@ -1,10 +1,14 @@
 # Research
 
-My research career in computational science spans a wide variety of computational projects in the physical sciences.
+My research career in computational science spans a wide variety of
+computational projects in the physical sciences.
 
-Over the years, each of these research topics succeeded only because I have been so fortunate to work with so many amazing collaborators and scientific mentors.
+Read on for a brief selection of research highlights over my career.
 
-For an overview of my research partners, see my Acknowledgements page. Read on for a brief selection of research highlights over my career.
+Over the years, each of these research topics succeeded only because I have
+been so fortunate to work with many amazing collaborators and scientific
+mentors. See my Acknowledgements page to learn more about my collaborators and
+funding sources.
 
 ## Nuclear Reactions In Astrophysics
 
