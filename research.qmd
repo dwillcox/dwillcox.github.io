@@ -1,6 +1,4 @@
-```yaml
-title: Research
-```
+# Research
 
 My research career in computational science spans a wide variety of computational projects in the physical sciences.
 
@@ -8,9 +6,9 @@ Over the years, each of these research topics succeeded only because I have been
 
 For an overview of my research partners, see my Acknowledgements page. Read on for a brief selection of research highlights over my career.
 
-# Nuclear Reactions In Astrophysics
+## Nuclear Reactions In Astrophysics
 
-## Mathematically Modeling Nuclear Reactions
+### Mathematically Modeling Nuclear Reactions
 
 Nuclear physics powers a vast array of high energy astrophysics events, from
 fusion in stars to supernovae and neutron star dynamics. Nuclear reactions
@@ -36,7 +34,7 @@ cite: pynucastro JOSS paper
 cite: pynucastro methods paper
 ```
 
-## Computationally Solving Nuclear Reactions
+### Computationally Solving Nuclear Reactions
 
 Nuclear reaction equations actually look mathematically similar to rate
 equations for chemistry or biological populations. We solve any equations of
@@ -101,9 +99,9 @@ While we directly communicated our methods and open code to the wider
 astrophysics community, our solutions are broadly applicable to related
 challenges all across computational science.
 
-# Neutron Star Astrophysics
+## Neutron Star Astrophysics
 
-## X-ray Bursting Neutron Stars
+### X-ray Bursting Neutron Stars
 
 !Note: Solving nuclear reactions on GPUs enables accelerated nuclear astrophysics simulations!
 
@@ -125,7 +123,7 @@ cite: XRB II Paper
 cite: relevant conference papers
 ```
 
-## Particle Acceleration in Neutron Star Environments
+### Particle Acceleration in Neutron Star Environments
 
 At LBL, I also collaborated with scientists who worked on electromagnetic
 modeling for particle accelerator physics. Together, we started a project to
@@ -148,9 +146,9 @@ methods to simulate high-energy particle emission from not only magnetic
 reconnection but also cosmic ray acceleration in other astrophysical
 environments.
 
-# Thermonuclear Supernovae
+## Thermonuclear Supernovae
 
-## Thermonuclear SN from hybrid white dwarf Stars
+### Thermonuclear SN from hybrid white dwarf Stars
 
 I started out my astrophysics career simulating deflagrations and detonations
 in "hybrid" white dwarf stars. The typical white dwarf (WD) star is within
@@ -205,7 +203,7 @@ explosions from typical white dwarfs.
 cite: Willcox+ 2016 paper
 ```
 
-## Thermonuclear Supernovae From Convectively Mixed Hybrid White Dwarf Stars
+### Thermonuclear Supernovae From Convectively Mixed Hybrid White Dwarf Stars
 
 I moved on to other astrophysics topics, but I still remained involved as my
 collaborators worked to advance my hybrid white dwarf research. We wished to
@@ -223,7 +221,7 @@ surprising effects.
 cite: Augustine+ mixed c/o/ne hybrid paper
 ```
 
-## Deflagrations from Convectively Mixed Hybrid White Dwarf Stars
+### Deflagrations from Convectively Mixed Hybrid White Dwarf Stars
 
 More recently, a newer graduate student followed up on our earlier hybrid white
 dwarf research by investigating the potential of hybrid white dwarf stars to
@@ -263,7 +261,7 @@ Catherine found [...] and published this work as follows:
 cite: Dimming the Lights, Feldman+
 ```
 
-# Neutrino Quantum Kinetics
+## Neutrino Quantum Kinetics
 
 In certain high energy astrophysics contexts, like core-collapse supernovae and
 neutron star mergers, neutrinos are radiated at such high densities they are
@@ -315,7 +313,7 @@ cite: Emu Code Paper
 cite: Emu 3D FFI Paper
 ```
 
-# Code Generation To Solve PDEs
+## Code Generation To Solve PDEs
 
 While at Berkeley Lab, I worked with other computational scientists to create
 automated code generation methods for solving PDE systems using either Eulerian
@@ -330,19 +328,19 @@ GPU-accelerated supercomputers.
 If you would like to collaborate on such research, you are always welcome to
 reach out.
 
-## Creating STvAR To Generate Adaptive-Mesh Eulerian PDE Solvers
+### Creating STvAR To Generate Adaptive-Mesh Eulerian PDE Solvers
 
 ```
 cite: STvAR code paper
 ```
 
-## Using STvAR To Narrow Hypothetical Limits On Axion Dark Matter
+### Using STvAR To Narrow Hypothetical Limits On Axion Dark Matter
 
 ```
 cite: Axion simulation paper
 ```
 
-## Creating A Code Generation Lagrangian Transport Framework
+### Creating A Code Generation Lagrangian Transport Framework
 
 The framework I created for the Emu code, where we solved the equations of
 neutrino quantum kinetics, is actually much more general. All the neutrino
@@ -368,7 +366,7 @@ cite: Emu Code Paper
 cite: Emu 3D FFI Paper
 ```
 
-# Machine Learning For Surrogate Models In Astrophysics
+## Machine Learning For Surrogate Models In Astrophysics
 
 Nuclear reactions are computationally intensive!
 
@@ -417,14 +415,14 @@ training dataset to a more comprehensive flame model. In addition, there are
 many follow-up questions for investigating alternate neural network structures
 and training techniques to better incorporate reaction physics constraints.
 
-# Computational Science Philosophy
+## Computational Science Philosophy
 
 I am equally a computational scientist as I am a physicist. In fact, I consider
 all these tightly interrelated. I analyze research topics from a physics
 perspective. Then I use the tools of computation and applied mathematics to
 carry out science by testing and falsifying hypotheses.
 
-## My Approach To Computational Science
+### My Approach To Computational Science
 
 My approach is to achieve reproducible results by thorough code documentation,
 strict version control, and ongoing testing.
@@ -451,7 +449,7 @@ other person.
 cite: links to our regression docs, GitHub Actions CI, and online regtest results pages.
 ```
 
-## What's Next For My Computational Research?
+### What's Next For My Computational Research?
 
 Quite a lot! Here are some research directions I am looking forward to pursuing
 next:
