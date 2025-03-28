@@ -1,0 +1,55 @@
+# Bio
+
+![Me pictured with NERSC's Cori supercomputer in 2017.](research/gallery/2017_NERSC_Cori.jpg)
+
+Hi! I'm Don Willcox, a computational physicist.
+
+Thanks for stopping by, if you would like to get in touch, contact me at [eugene.willcox@gmail.com](mailto:eugene.willcox@gmail.com).
+
+## About Me
+
+Most recently, I worked as a project scientist in the Center for Computational
+Sciences and Engineering (CCSE).
+
+[CCSE](https://ccse.lbl.gov) is a computational science research group within
+the Applied Mathematics and Computational Research Division at Berkeley Lab.
+
+My research in computational astrophysics includes algorithms for nuclear
+burning, solving PDEs on adaptive meshes, and neutrino quantum kinetics. I also
+develop methods for accelerating these algorithms for GPU-based supercomputers.
+Most recently, I've also worked on mesoscale atmospheric modeling as part of
+the Energy Research and Forecasting (ERF) project.
+
+Nowadays, I'm interested in adaptively accurate methods for multiphysics
+modules in the large-scale codes I have developed.
+
+I'm also interested in using forward simulations and data science together with
+machine learning to more efficiently answer inverse scientific questions.
+
+To learn more about my research interests,
+see my [What's Next?](research_horizons.qmd) research page.
+
+Before joining Berkeley Lab, I completed my PhD in Physics at Stony Brook
+University in August 2018.
+
+My PhD thesis used the FLASH code to simulate thermonuclear supernovae from
+novel hybrid white dwarf stars. I also designed reacting-hydrodynamics
+simulations with the MAESTRO code to quantify nuclear energy transport by the
+convective Urca process in carbon-oxygen white dwarf supernovae progenitors. 
+
+For information about my research, see my [Research pages](research.qmd).
+
+I enjoy collaborating with other scientists as well as helping train graduate
+and undergraduate researchers in computational science methods.
+
+For a list of student interns I've advised at LBNL,
+see the [Research Advising](cv.qmd#research-advising) section of my CV.
+
+Opportunities for [scientific outreach](cv.qmd#community-outreach) are also
+meaningful to me because many professors and research advisors have invested
+their time and energy to make me the scientist I am today. Recognizing I stand
+on their shoulders inspires me to give back to the scientific community and
+public.
+
+When I'm not doing science, I enjoy reading science fiction and trying to cook
+new recipes. Sometimes I even take walks outside when I'm especially ambitious!

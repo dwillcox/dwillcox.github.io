@@ -1,0 +1,155 @@
+# CV
+
+When I started college in 2007, I set out inspired to figure out how the world works.
+
+My quest naturally ventured into engineering, then physics and computation, always finding more to learn even after completing graduate school in 2018.
+
+Now as a physicist and computational scientist, I use computer algorithms to research the world around us.
+
+I like working on open-source scientific codes and openly publishing my findings whenever possible because I have, in turn, learned quite a lot from open-access research papers and public codes.
+
+Similarly, I enjoy teaching, advising, and giving public talks so I can make science accessible for others just as my many academic and research mentors have done for me over the years.
+
+What follows is a brief overview of my journey and research career so far.
+
+
+## Most Recent Position
+
+* 2022-2024: **Project Scientist**, Center for Computational Sciences and Engineering
+* 2018-2022: **Postdoctoral Researcher**, Center for Computational Sciences and Engineering
+
+Applied Mathematics and Computational Research Division
+
+Lawrence Berkeley National Laboratory
+
+1 Cyclotron Road Mailstop 50A3111
+
+Berkeley, CA 94720
+
+## Academics
+### Education
+
+* Stony Brook University - Stony Brook, NY, USA
+    + **Ph.D., Physics, August 2018**
+* LeTourneau University - Longview, TX, USA
+    + **B.S., Engineering Physics, May 2011**
+    + **B.S., Electrical Engineering, May 2011**
+    + **Minors: Mathematics, Applied Sciences**
+
+### Fellowships
+
+* 2011 - 2018: **Turner Fellow**, Stony Brook University Center for Inclusive Education
+* 2007 - 2011: **Heritage Scholarship**, LeTourneau University
+
+### Professional Development
+
+* 2019: Participated in GPU Hackathon organized by NERSC
+* 2018: Participated in GPU Hackathon at Brookhaven National Laboratory
+* 2018: Participated in GPU Hackathon at University of Colorado, Boulder
+* 2018: Achieved Software Carpentry instructor certification
+* 2017: Participated in GPU Hackathon at Brookhaven National Laboratory
+* 2016: Participated in GPU Hackathon hosted by the Oak Ridge Leadership Computing Facility
+* 2015: Participated in GPU Hackathon hosted by the Oak Ridge Leadership Computing Facility
+* 2015: Studied at the Argonne Training Program on Extreme-Scale Computing
+* 2014: Studied at the MESA Summer School for simulating massive stars, accreting white dwarfs, stellar mixing processes and more at UC Santa Barbara
+* 2014: Studied at the JINA TALENT Course on Nuclear Theory for Astrophysics at Michigan State University
+
+## Research
+### Funding Proposals
+
+* 2023: *(Partially Funded)* **Bioreactor digital twinning - Accelerating bioprocess scaling by combining computational fluid dynamics with metabolic modeling**
+    + role: Principal Investigator
+    + collaborators: Co-Investigator Hector Garcia Martin (LBNL, Biosciences Area)
+    + institution: Berkeley Lab FY 2024 Multi-Area LDRD
+* 2023: *(Not Funded)* **Advancing AMR-Wind Turbine Simulations With Machine Learning**
+    + role: Principal Investigator
+    + collaborators: Co-Investigators Adam Lavely (LBNL) and Ganesh Vijayakumar (NREL)
+    + institution: DOE Wind Energy Technologies Office
+* 2023: *(Not Funded)* **Artificial Intelligence for Multiscale Wind Modeling with the ERF Simulation Code**
+    + role: Principal Investigator
+    + institution: DOE Wind Energy Technologies Office
+
+### Computing Time Awards
+
+* 2023: Co-Investigator, INCITE 2023 award, *Exascale Models of Astrophysical Thermonuclear Explosions* (**Awarded: 400 k node-hours on Summit, 300 k node-hours on Frontier, 100 k node-hours on Polaris**)
+* 2022: Co-Investigator, INCITE 2022 award at OLCF, *Approaching Exascale Models of Astrophysical Explosions* (**Awarded: 590 k node-hours on Summit**)
+* 2021: Senior Investigator, NERSC 2021 Allocation, *Three-dimensional studies of white dwarfs, massive stars, and neutron star systems* (**Awarded: 30 M MPP hours**)
+* 2021: Senior Investigator, NERSC 2021 Allocation, *Neutrino Flavor Transformation in Neutron Star Mergers* (**Awarded: 18 M MPP hours**)
+* 2021: Senior Investigator, NERSC 2021 Allocation, *Astrophysics of Supernova Progenitors* (**Awarded: 13 M MPP hours**)
+* 2020: Senior Investigator, NERSC 2020 Allocation, *Three-dimensional studies of white dwarfs, massive stars, and neutron star systems* (**Awarded: 30 M MPP hours**)
+* 2019-2020: Co-Investigator, INCITE 2019 award at OLCF, *Approaching Exascale Models of Astrophysical Explosions* (**Awarded 2019: 1.5 M node-hours on Titan, 105 k node-hours on Summit; Awarded 2020: 300 k node-hours on Summit**)
+* 2018: Senior Investigator, NERSC 2018 Allocation, *Three-dimensional studies of white dwarf and neutron star systems* (**Awarded: 20.8 M MPP hours**)
+* 2018: Co-Investigator, INCITE 2018 award at OLCF, *Approaching Exascale Models of Astrophysical Explosions* (**Awarded: 40 Mh**)
+
+### Scientific Software
+
+* ongoing: Co-creator of the Emu simulation code for astrophysical neutrino quantum kinetics in 6-dimensional phase space
+    + [https://github.com/amrex-astro/Emu](https://github.com/amrex-astro/Emu)
+* ongoing: Core developer of the Castro simulation code for astrophysical radiation-hydrodynamics on adaptive meshes
+    + [https://github.com/amrex-astro/Castro](https://github.com/amrex-astro/Castro)
+* ongoing: Core developer of the StarKiller Microphysics code, a collection of publicly-available astrophysical microphysics routines and nuclear reaction network integrators
+    + [https://github.com/starkiller-astro/Microphysics](https://github.com/starkiller-astro/Microphysics)
+* ongoing: Co-developer of pynucastro, a publicly-available Python interface to the JINA Reaclib nuclear reaction rate database for rate visualization and ODE right hand side code generation in Python and C++
+    + [https://github.com/pynucastro/pynucastro](https://github.com/pynucastro/pynucastro)
+* ongoing: Co-creator of the StarSTRUQ github organization for publicly-available code implementing uncertainty quantification algorithms useful for stellar evolution calculations
+    + [https://github.com/StarSTRUQ](https://github.com/StarSTRUQ)
+* ongoing: Core developer of the ERF simulation code for large-scale (ie. mesoscopic) weather modeling
+    + [https://github.com/erf-model/erf](https://github.com/erf-model/erf)
+
+### Research Advising
+
+* 2019–2021: Eloise Yang
+    + Co-mentor for LBNL intern
+* 2020–2021: Nicole Ford
+    + Associate mentor for Fall 2020 & Spring 2021 DOE SULI intern at LBNL
+* Summer 2021: Chris Degrendele
+    + Mentor for NSF MSGI intern at LBNL
+* Summer 2020: Chris Degrendele
+    + Mentor for LBNL summer intern
+* Summer 2020: Ty Frazier
+    + Mentor for NSF MSGI intern at LBNL
+* Summer 2019: Chris Degrendele
+    + Co-mentor for LBNL summer intern
+* Summer 2019: Kiran Eiden
+    + Co-mentor for LBNL summer intern
+
+### Professional Service
+
+* ongoing: Referee for the Astrophysical Journal
+* ongoing: Referee for Communications in Applied Mathematics and Computational Science
+* 2021: Organizer for SIAM CSE 2021 Minisymposium MS137: Machine Learning Approaches in Computational Astrophysics and Cosmology
+
+## Outreach and Teaching
+### Community Outreach
+
+* Spring 2022: Volunteer Judge for Oakland Unified School District Elementary Science Fair
+* 10/20/2020: Panelist at CAUSE Career Panel, University of Minnesota
+* 06/18/2019: How to Simulate a Thermonuclear Supernova - public talk at the Berkeley Public Library
+* 01/2019: Judge for Chambliss poster competition at the 233rd Meeting of the American Astronomical Society
+* 02/21/2018: Saturn in 13 Years: the Cassini-Huygens Mission - public talk at the Astronomical Society of Long Island, Vanderbilt Museum and Planetarium
+* 11/03/2017: Saturn in 13 Years: the Cassini-Huygens Mission - public talk in the Astronomy Open Night Series, Stony Brook University
+
+### Teaching Experience
+
+* *Lawrence Berkeley National Laboratory*
+    + 2019,2020,2021: **ATPESC Lecturer Support Staff**
+        - Designed and presented hands-on exercises for the AMReX code at the Argonne Training Program on Extreme-Scale Computing.
+* *Stony Brook University*
+    + Spring 2017: **WISE Computational Astrophysics**
+        - Co-instructor for a computational astrophysics course for the Women In Science and Engineering program.
+    + Summer 2015: **IACS Computes!**
+        - Teaching assistant for a Python programming workshop for high school students by the Institute for Advanced Computational Sciences.
+    + Spring 2014: **Astronomy**
+        - Teaching assistant for an undergraduate astronomy course.
+    + Spring 2013: **Modern Physics**
+        - Teaching assistant instructor for an undergraduate laboratory on relativity and quantum mechanics.
+    + Summer 2012: **Introduction to Calculus II**
+        - Instructor for a 3-week course on integral calculus for incoming freshman students.
+    + 2012: **Introductory Physics**
+        - Teaching assistant instructor for undergraduate laboratory on electricity and magnetism.
+* *LeTourneau University*
+    + Fall, 2008-2010: **Electricity and Magnetism**
+        - Recitation instructor for undergraduates taking the physics course on electricity and magnetism.
+    + Spring 2010: **Classical Mechanics**
+        - Recitation instructor for undergraduates taking the physics course on classical mechanics.
+

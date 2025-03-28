@@ -1,0 +1,58 @@
+# Talks
+
+I've presented my research quite a few times for both scientific specialists and wider audiences.
+
+Whatever the audience, I always do my best to explain complex ideas clearly.
+
+Here, you'll find my talks that are available online as well as a complete list for reference.
+
+
+## Recorded Talks
+
+### Berkeley Lab CS Postdoc Symposium 2020: **Towards Exascale Supernova Simulations**
+
+{{< video https://www.youtube.com/embed/EfO9gaf07OY?si=Cod9Pc_gJ6E-i_QX >}}
+
+### ATPESC 2019 Tutorial: **Building A Block-Structured AMR Application**
+
+{{< video https://www.youtube.com/embed/UhPv4hXQUzw?si=5kW7jmMz-FXTaO8r >}}
+
+
+## Complete List of Talks
+
+### Conference Talks / Invited Talks / Seminars
+
+* 07/15/2021: **Supercomputing For Nuclear Astrophysics**
+    + Seminar for the CS Summer Student Seminar Series, Computing Sciences, Lawrence Berkeley National Laboratory
+* 04/19/2021: **Neutrino Flavor Transformations with Emu: A New Particle-in-Cell Code for Quantum Kinetics**
+    + Invited Speaker in APS April Meeting 2021 Session T05
+* 03/02/2021: **Towards Surrogate Models for Nuclear Reactions in Astrophysics**
+    + Speaker in SIAM CSE 2021 Minisymposium MS137
+* 07/09/2020: **Simulating Supernovae with Supercomputers**
+    + Seminar for the CS Summer Student Seminar Series, Computing Sciences, Lawrence Berkeley National Laboratory
+* 01/31/2020: **Towards ExaScale Supernovae Simulations**
+    + Talk at the 1st Annual CS Area Postdoc Symposium, Computing Sciences, Lawrence Berkeley National Laboratory
+* 11/15/2017: **Stellar Explosion Mechanics: Properties and Physical Processes in White Dwarf Interiors**
+    + Seminar for the Student Seminar Series, Institute for Advanced Computational Sciences, Stony Brook University
+* 10/05/2017: **The Dynamics and Origins of Thermonuclear (Type Ia) Supernovae**
+    + Talk at the Interdisciplinary Theoretical and Computational Physical Science meeting, Tokyo Institute of Technology, Japan
+* 09/29/2017: **A Brief Tour of the AMReX Astrophysics Suite of Codes**
+    + Talk at NY Area Computational Hydro Workshop, Flatiron Institute/CCA
+* 06/28/2017: **White Dwarfs as Type Ia Supernovae Progenitors**
+    + Seminar for the Research Café Series, Center for Inclusive Education, Stony Brook University
+* 06/16/2017: **Simulations of Various White Dwarf Progenitor Models for Type Ia Supernovae**
+    + Invited talk at Current Challenges in the Physics of White Dwarf Stars, Santa Fe, NM
+* 06/14/2017: **Status of Recent Work for Type Ia Supernovae Progenitors: Hybrid C-O-Ne White Dwarfs, the Convective Urca Process, and Accelerated Reaction Networks**
+    + Invited astrophysics seminar at Los Alamos National Laboratory, NM
+* 02/05/2017: **Elucidating the Convective Urca Process in Pre-Supernova White Dwarfs Using Three-Dimensional Simulations**
+    + Talk at JINA-CEE Frontiers in Nuclear Astrophysics: Junior Researchers Workshop, Michigan State University
+
+### Public Talks
+
+* 06/18/2019: **How to Simulate a Thermonuclear Supernova**
+    + Public talk at the Berkeley Public Library, Claremont
+* 02/21/2018: **Saturn in 13 Years: the Cassini-Huygens Mission**
+    + Public talk at the Astronomical Society of Long Island, Vanderbilt Museum and Planetarium
+* 11/03/2017: **Saturn in 13 Years: the Cassini-Huygens Mission**
+    + Public talk in the Astronomy Open Night Series, Stony Brook University
+

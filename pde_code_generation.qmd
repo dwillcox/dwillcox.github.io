@@ -1,0 +1,98 @@
+# Solving PDEs With Code Generation
+
+Scientists frequently work to understand complicated space-time dynamics or
+conservation laws by describing their evolution using Partial Differential Equations (PDEs).
+Simply put, PDEs predict how a quantity evolves by calculating derivatives in space and time.
+
+While at Berkeley Lab, I worked with other computational scientists to create
+automated code generation methods for solving PDE systems using either Eulerian
+or Lagrangian techniques.
+
+Our codes are open-source, and our methods are generally useful for a wide
+variety of scientific contexts where PDEs exist or could be devised but would
+be challenging to solve. We can translate symbolic PDEs into high performance
+code very simply and create a simulation package ready to run on modern
+GPU-accelerated supercomputers.
+
+If you would like to collaborate on such research, you are always welcome to
+reach out.
+
+## Creating STvAR To Generate Adaptive-Mesh Eulerian PDE Solvers
+
+As part of the ExaStar team within the DOE Exascale Computing Project,
+I worked with Adam Peterson to design a code-generation tool for
+solving the numerical general relativity equations
+using the AMReX framework for block-structured adaptive mesh refinement.
+
+Although our project's immediate focus was general relativity,
+the Einstein equations are notoriously lengthy when expanded into numerical form.
+Translating hundreds of arithmetic terms into computer code by hand
+would be laborious and it would be very easy to make mistakes.
+
+Thus, we turned to code generation based on Sympy, an open-source Python package for symbolic mathematics.
+We wrote a python package using Sympy to
+translate partial differential equations in space and time
+into C++ computer code computing the arithmetic operations on the variables in these equations.
+
+We used the Method of Lines technique to solve solve these partial differential equations.
+Method of Lines replaces all spatial derivatives with finite-difference derivatives,
+and we implemented high-order derivative stencils for fourth-order accuracy in space.
+
+The Method of Lines approach leaves the time derivatives in the equations symbolic,
+but it tells us exactly how to compute them using finite-difference discretization for all the other terms in the PDEs.
+
+We then integrated the time derivatives
+using a Runge-Kutta explicit time integrator of high order,
+enabling us to reach fourth-order accuracy in time.
+
+Our code generation framework offers flexible accuracy and efficiency.
+We can select the space and time order for the discretization to meet our computational and accuracy requirements.
+
+The resulting code also allows us to customize where we focus adaptive mesh refinement
+according to the unique needs of the system of equations we are solving.
+
+Our code verification paper demonstrates how we used STvAR to solve Einstein's equations
+and compute the gravitational wave signature from two black holes spiraling together.
+
+For details, see @peterson_codegen_2023.
+
+## Using STvAR To Narrow Hypothetical Limits On Axion Dark Matter
+
+Our code-generation research to solve numerical general relativity soon sparked interest in other fields.
+
+Ben Safdi and his collaborators were coincidentally studying a hypothesized axion dark matter model they wished to solve on cosmological scales.
+
+They contacted us wishing to use our code generation framework to solve the axion field equations with adaptive mesh refinement.
+
+We worked with these dark matter researchers to construct a simulation code solving the axion field equations with high order finite differencing.
+The primary challenge was following the axion string evolution on the cosmological scales required, requiring careful adaptive mesh refinement. 
+
+Our collaboration enabled the team to simulate axion string evolution and radiation on cosmological spacetime scales with unprecedented resolution.
+
+These new simulations tightened the current cosmological constraints on the range of axion mass-energy by more than a factor of three.
+
+For details, see @buschmann_axions_2022.
+
+## Creating A Code Generation Lagrangian Transport Framework
+
+The framework I created for the Emu code, where we solved the equations of
+neutrino quantum kinetics, is actually much more general. All the neutrino
+physics is generated for the Lagrangian particle computational kernels using
+Sympy to translate the quantum flavor equations into inlined C++ functions.
+
+Emu's main codebase is actually a general Lagrangian transport method using
+Runge-Kutta to update particle positions and their internal state together.
+
+The right-hand side for the differential equations we solve happens to use an
+underlying mesh and particle-in-cell operations to evaluate mean-field
+quantities. However, in principle we could easily use nearest-neighbor particle
+operations for a purely Lagrangian approach. The AMReX framework supports both
+particle-mesh and particle-particle computational kernels for production codes.
+
+I'm interested in using this general Lagrangian PDE solver method for other PDE
+systems where Eulerian methods introduce too much numerical diffision to the
+transport solver. Our method would be especially useful if the Lagrangian
+transport elements possess active, time-varying properties. This would be an
+excellent technique for transport simulations of active fluids, for example.
+
+For details, see @richers_pic_2021 and @richers_neutrino3D_2021.

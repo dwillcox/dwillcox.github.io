@@ -1,0 +1,79 @@
+# Neutrino Quantum Kinetics
+
+In certain high energy astrophysics contexts, like core-collapse supernovae and
+neutron star mergers, neutrinos are radiated at such high densities they are
+capable of exhibiting collective behavior as a many-body quantum system. At the
+same time, neutrinos travel at nearly the speed of light and must be modeled
+using the techniques of radiation transport, this is the kinetics part.
+
+## Neutrino Quantum Kinetics Influences Heavy Element Creation, But Is Challenging To Predict!
+
+It so happens that neutron star mergers, and to a lesser extent, core collapse
+supernovae, are understood by astrophysicists to produce the majority of all
+elements heavier than iron on the periodic table, such as gold. Since neutrinos
+interact with neutrons and protons, neutrinos influence the likelihood of
+various nucleosynthesis pathways for creating all these heavy elements.
+
+But how can we make accurate estimations of which astrophysics events produced
+various quantities of elements? Well, we observe radiation spectra from these
+events, then we match these observed spectra with detailed computational models
+of the explosion and the radiation it produces to determine the starting
+conditions for the explosion.
+
+But computing the influence of neutrinos is fairly difficult, we have to solve
+a radiation transport problem in six dimensions (three space plus two angular
+dimensions plus time). Then as if radiation transport weren't difficult enough,
+we need to solve a many-body quantum mechanics problem to evolve the neutrino
+flavor states.
+
+## Neutrino Quantum Flavor Instabilities Play A Critical Role, Requiring Specialized Code
+
+If the quantum mechanics of neutrinos is hard to simulate, we might naturally
+ask what makes the neutrino quantum flavor state so important in the first place.
+
+Getting the neutrino quantum state right is important because under certain conditions,
+theorists have found neutrinos can evolve fast flavor instabilities (FFI).
+Under FFI conditions, the overall neutrino flavor state very rapidly destabilizes
+before approaching a completely different equilibrium state over longer timescales.
+
+The problem is that these FFI events can occur in volumes of space that would
+fit into the palm of one's hand, over timescales measured in just a few
+nanoseconds. This is far faster than explosion simulations can possibly
+capture, so we need to write a specialized simulation code just for neutrino
+quantum kinetics.
+
+We can then predict what conditions could lead to FFI and the
+long term outcomes to provide effective models for larger, more complete
+simulations of the entire explosion event.
+
+## We Created Emu: A Six-Dimensional, Three-Flavor Code To Solve Neutrino Quantum Kinetics
+
+I worked with Sherwood Richers to create Emu, a new simulation code based on the
+particle-in-cell technique to solve neutrino quantum kinetics in the mean field
+approximation.
+
+We represent the neutrino radiation field using Lagrangian
+particles traveling atop an underlying spatial mesh that contains the mean
+field quantum many-body state as well as the nuclear matter background.
+
+### We Validated Emu By Simulating Neutrino Fast Flavor Instabilities In One Spatial Dimension
+
+We started with one-dimension in space, two dimensions in angle, and three neutrino flavors
+to evaluate the dynamics of FFI under conditions where other simulation codes
+provided a means of comparison. We published this work in our first Emu paper.
+
+For details, see @richers_pic_2021.
+
+### Emu Enables Us To Simulate Neutrino Fast Flavor Instabilities In Three Spatial Dimensions
+
+After validating our method and publishing our numerical technique in our first paper,
+we moved on to the exciting challenge of fully three-dimensional simulations.
+
+This time, we wanted to capture all three dimensions of the volume of space neutrinos
+traversed while undergoing fast flavor instability. We also wanted to simulate every
+angular direction in which neutrinos could travel over the full instability timescale.
+
+We repeated the FFI conditions in our earlier one-dimensional paper, again with all
+three neutrino flavors and published our work in a follow-up paper.
+
+For details, see @richers_neutrino3D_2021.

@@ -1,0 +1,29 @@
+# Computational Science Philosophy
+
+I am equally a computational scientist as I am a physicist. In fact, I consider
+all these tightly interrelated. I analyze research topics from a physics
+perspective. Then I use the tools of computation and applied mathematics to
+carry out science by testing and falsifying hypotheses.
+
+## My Approach To Computational Science
+
+My approach is to achieve reproducible results by thorough code documentation,
+strict version control, and ongoing testing.
+
+Validation is ongoing, not just at the end of a project or done once and then
+forgotten.
+
+Development should keep in mind specific tests the numerical code should pass.
+Sometimes this means unit tests, sometimes this means regression tests.
+
+Run tests on an ongoing basis using Continuous Integration through, e.g. GitHub
+Actions or an equivalent.
+
+Catch regression or unit test errors at pull request review time, if not
+earlier, before breaking changes have a chance to make it into the main code.
+This simple approach is enormously useful when a bug appears in my simulations
+and I find myself backtracking through the code history to pinpoint where it
+came from!
+
+Always have someone review your code, even if you are just working with one
+other person.

@@ -2,22 +2,54 @@ project:
   type: website
 
 website:
-  title: "research-website"
+  title: "Don Willcox"
   navbar:
+    logo: research/gallery/willcox_lbl_hs_circ.png
+    logo-alt: a photo of me
+    search: true
     left:
       - href: index.qmd
         text: Home
-      - research.qmd
+      - sidebar:research
+      - talks.qmd
       - publications.qmd
-      - about.qmd
+      - cv.qmd
+      - bio.qmd
+    right:
+      - icon: envelope-at-fill
+        href: mailto:eugene.willcox@gmail.com
+      - icon: github
+        href: https://github.com/dwillcox
+  reader-mode: true
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer:
+    center: "Copyright 2025, Don E. Willcox"
+  repo-url: https://github.com/dwillcox/dwillcox.github.io
+  repo-actions: [source, issue]
+  
+  sidebar:
+    - id: research
+      title: "Research"
+      collapse-level: 2
+      contents:
+        - research.qmd
+        - thermonuclear_supernovae.qmd
+        - nuclear_reactions.qmd
+        - ml_reactions.qmd
+        - neutron_stars.qmd
+        - neutrino_quantum_kinetics.qmd
+        - pde_code_generation.qmd
+        - compsci_philosophy.qmd
+        - research_horizons.qmd
+
+bibliography: research/publications/willcox_publications.bib
+csl: research/publications/mod-astrophysical-journal.csl
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
-
-
-

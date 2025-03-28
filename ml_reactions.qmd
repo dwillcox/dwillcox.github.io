@@ -1,0 +1,46 @@
+# Machine Learning For Surrogate Models
+
+Nuclear reactions are computationally intensive!
+
+After working to accelerate our reaction solvers on GPUs, I saw the great
+utility of machine learning for assisting PDE solvers and started a project to
+address an important question the astrophysics community had not yet
+researched.
+
+What if we could replace expensive, time-consuming reaction network solvers
+with good approximate surrogate models using machine learning?
+
+If successful, ML surrogate techniques could drastically speed up the most
+time-intensive reaction physics module in nearly all explosive astrophysics
+simulations.
+
+Why?
+
+Well, in high-energy nuclear astrophysics (think supernovae and neutron star
+mergers), turbulence, radiation, and nuclear reactions drive the dynamics. Yet,
+especially in the reaction physics case, these equations mathematically
+generate stiff nonlinearities where we must focus computational intensity to
+solve with acceptable accuracy. Approximate methods can be wildly wrong!
+
+Physics-informed neural networks (PINNs) are promising but the equations we
+must solve for reaction physics are not only nonlinear but extremely stiff. In
+mathematical terms, when we construct a linear approximation to the full
+equations, the ratio of Jacobian elements can be greater than twenty orders of
+magnitude for explosive burning simulations. This makes the gradient error
+functions in PINNs quite difficult to use for training surrogate models over a
+large enough dynamic range to capture a complete burning model.
+
+We thus started our research with a simpler forward neural network and found we
+needed a recurrent neural network for gradient descent to train the network
+effectively. We studied simple laminar flame models to start out instead of
+going straight to turbulent flame modeling.
+
+Our first paper thus demonstrated a successful proof-of-concept method for
+nuclear reaction surrogate modeling.
+
+For details, see @fan_neuralnets_2022.
+
+I'm eager to extend our initial work to explosive astrophysics by expanding the
+training dataset to a more comprehensive flame model. In addition, there are
+many follow-up questions for investigating alternate neural network structures
+and training techniques to better incorporate reaction physics constraints.

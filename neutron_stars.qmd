@@ -1,0 +1,41 @@
+# Neutron Stars
+
+## X-ray Bursting Neutron Stars
+
+Solving nuclear reactions on GPUs enabled accelerated nuclear astrophysics simulations.
+For more details about how we accelerated nuclear reactions, see [Nuclear Reactions](nuclear_reactions.qmd).
+
+My GPU work enabled our nuclear astrophysics collaboration to simulate detailed
+two and three-dimensional nuclear flames on neutron star surfaces!
+
+Neutron stars in binary star systems can under certain astrophysical conditions
+accrete material from their companion star. In these cases, the neutron star's
+atmosphere can undergo periodic thermonuclear runaway burning visible from
+Earth as a bright burst of X-rays.
+
+By carefully modeling the X-ray burst physics, we hope to correlate observed
+X-ray bursts with properties of the unseen, super-dense neutron star core
+hiding below its atmosphere.
+
+For details, see @zingale_towardxrb_2019, @eiden_xrb1_2020, and @harpole_xrb2_2021.
+
+## Particle Acceleration in Neutron Star Environments
+
+At LBL, I also collaborated with scientists who worked on electromagnetic
+modeling for particle accelerator physics. Together, we started a project to
+model relativistic particle acceleration from magnetic reconnection in rapidly
+rotating neutron star magnetospheres.
+
+We worked with a talented intern, Eloise Yang, who set up these simulations in
+the WarpX electromagnetic particle-in-cell (PIC) code. After Eloise left LBL,
+postdoc Hannah Klion picked up the project. Our combined efforts succeeded,
+and our project's first paper explored new advances in electromagnetic PIC
+solver methods and their utility for simulating charge acceleration from
+relativistic magnetic reconnection.
+
+For details, see @klion_pic_2023.
+
+This research sets the foundation for applying our numerical
+methods to simulate high-energy particle emission from not only magnetic
+reconnection but also cosmic ray acceleration in other astrophysical
+environments.

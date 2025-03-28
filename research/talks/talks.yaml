@@ -1,0 +1,116 @@
+Talks:
+  Introduction: |
+    I've presented my research quite a few times for both scientific specialists and wider audiences.
+
+    Whatever the audience, I always do my best to explain complex ideas clearly.
+
+    Here, you'll find my talks that are available online as well as a complete list for reference.
+    
+  Recorded:
+    entries:
+      - title: "Towards Exascale Supernova Simulations"
+        year: 2020
+        location: "Berkeley Lab CS Postdoc Symposium 2020"
+        link: None
+        video: "https://www.youtube.com/embed/EfO9gaf07OY?si=Cod9Pc_gJ6E-i_QX"
+
+      - title: "Building A Block-Structured AMR Application"
+        year: 2019
+        location: "ATPESC 2019 Tutorial"
+        link: None
+        video: "https://www.youtube.com/embed/UhPv4hXQUzw?si=5kW7jmMz-FXTaO8r"
+
+  Research:
+    entries:
+      - title: "Supercomputing For Nuclear Astrophysics"
+        year: "07/15/2021"
+        location: "Seminar for the CS Summer Student Seminar Series, Computing Sciences, Lawrence Berkeley National Laboratory"
+        link: None
+        video: None
+
+      - title: "Neutrino Flavor Transformations with Emu: A New Particle-in-Cell Code for Quantum Kinetics"
+        year: "04/19/2021"
+        location: "Invited Speaker in APS April Meeting 2021 Session T05"
+        link: None
+        video: None
+
+      - title: "Towards Surrogate Models for Nuclear Reactions in Astrophysics"
+        year: "03/02/2021"
+        location: "Speaker in SIAM CSE 2021 Minisymposium MS137"
+        link: None
+        video: None
+
+      - title: "Simulating Supernovae with Supercomputers"
+        year: "07/09/2020"
+        location: "Seminar for the CS Summer Student Seminar Series, Computing Sciences, Lawrence Berkeley National Laboratory"
+        link: None
+        video: None
+
+      - title: "Towards ExaScale Supernovae Simulations"
+        year: "01/31/2020"
+        location: "Talk at the 1st Annual CS Area Postdoc Symposium, Computing Sciences, Lawrence Berkeley National Laboratory"
+        link: None
+        video: None
+
+      - title: "Stellar Explosion Mechanics: Properties and Physical Processes in White Dwarf Interiors"
+        year: "11/15/2017"
+        location: "Seminar for the Student Seminar Series, Institute for Advanced Computational Sciences, Stony Brook University"
+        link: None
+        video: None
+
+      - title: "The Dynamics and Origins of Thermonuclear (Type Ia) Supernovae"
+        year: "10/05/2017"
+        location: "Talk at the Interdisciplinary Theoretical and Computational Physical Science meeting, Tokyo Institute of Technology, Japan"
+        link: None
+        video: None
+
+      - title: "A Brief Tour of the AMReX Astrophysics Suite of Codes"
+        year: "09/29/2017"
+        location: "Talk at NY Area Computational Hydro Workshop, Flatiron Institute/CCA"
+        link: None
+        video: None
+
+      - title: "White Dwarfs as Type Ia Supernovae Progenitors"
+        year: "06/28/2017"
+        location: "Seminar for the Research Café Series, Center for Inclusive Education, Stony Brook University"
+        link: None
+        video: None
+
+      - title: "Simulations of Various White Dwarf Progenitor Models for Type Ia Supernovae"
+        year: "06/16/2017"
+        location: "Invited talk at Current Challenges in the Physics of White Dwarf Stars, Santa Fe, NM"
+        link: None
+        video: None
+
+      - title: "Status of Recent Work for Type Ia Supernovae Progenitors: Hybrid C-O-Ne White Dwarfs, the Convective Urca Process, and Accelerated Reaction Networks"
+        year: "06/14/2017"
+        location: "Invited astrophysics seminar at Los Alamos National Laboratory, NM"
+        link: None
+        video: None
+
+      - title: "Elucidating the Convective Urca Process in Pre-Supernova White Dwarfs Using Three-Dimensional Simulations"
+        year: "02/05/2017"
+        location: "Talk at JINA-CEE Frontiers in Nuclear Astrophysics: Junior Researchers Workshop, Michigan State University"
+        link: None
+        video: None
+
+  Public:
+    entries:
+      - title: "How to Simulate a Thermonuclear Supernova"
+        year: "06/18/2019"
+        location: "Public talk at the Berkeley Public Library, Claremont"
+        link: None
+        video: None
+
+      - title: "Saturn in 13 Years: the Cassini-Huygens Mission"
+        year: "02/21/2018"
+        location: "Public talk at the Astronomical Society of Long Island, Vanderbilt Museum and Planetarium"
+        link: None
+        video: None
+
+      - title: "Saturn in 13 Years: the Cassini-Huygens Mission"
+        year: "11/03/2017"
+        location: "Public talk in the Astronomy Open Night Series, Stony Brook University"
+        link: None
+        video: None
+

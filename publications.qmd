@@ -1,5 +1,4 @@
 ---
-title: Publications
 lightbox: true
 ---
 
@@ -21,286 +20,286 @@ As my publication record illustrates, I research best by collaborating with othe
 ## 26. ERF: Energy Research and Forecasting Model
 
 ![Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom).
-DOI: [doi.org/10.48550/arXiv.2412.04395](doi.org/10.48550/arXiv.2412.04395)](research/publications/pub0026/pub0026_f11.png "Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom)."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.48550/arXiv.2412.04395](https://www.doi.org/10.48550/arXiv.2412.04395)](research/publications/pub0026/pub0026_f11.png "Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom)."){group=\"pub-gallery\"}
 
 A. Lattanzi, A. Almgren, E. Quon, M. Natarajan, B. Kosovic, J. Mirocha, B. Perry, D. Wiersema, D. Willcox, X. Yuan, W. Zhang
 
 2024, arXiv:2412.04395
 
-[doi.org/10.48550/arXiv.2412.04395](doi.org/10.48550/arXiv.2412.04395)
+[https://www.doi.org/10.48550/arXiv.2412.04395](https://www.doi.org/10.48550/arXiv.2412.04395)
 
 ## 25. Code Generation for AMReX with Applications to Numerical Relativity
 
 ![Simulated binary black hole inspiral traces black hole centers through (3+1) spacetime and radiates the characteristic chirp waveform.
-DOI: [doi.org/10.1088/1361-6382/ad0b37](doi.org/10.1088/1361-6382/ad0b37)](research/publications/pub0025/pub0025_inspiral_chirp.png "Simulated binary black hole inspiral traces black hole centers through (3+1) spacetime and radiates the characteristic chirp waveform."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1361-6382/ad0b37](https://www.doi.org/10.1088/1361-6382/ad0b37)](research/publications/pub0025/pub0025_inspiral_chirp.png "Simulated binary black hole inspiral traces black hole centers through (3+1) spacetime and radiates the characteristic chirp waveform."){group=\"pub-gallery\"}
 
 A. J. Peterson, D. Willcox, and P. Moesta
 
 2023, Classical and Quantum Gravity, 40, 245013
 
-[doi.org/10.1088/1361-6382/ad0b37](doi.org/10.1088/1361-6382/ad0b37)
+[https://www.doi.org/10.1088/1361-6382/ad0b37](https://www.doi.org/10.1088/1361-6382/ad0b37)
 
 ## 24. Dimming the Lights: 2D Simulations of Deflagrations of Hybrid C/O/Ne White Dwarfs using FLASH
 
 ![Density profiles of thermonuclear supernova simulations from initial Carbon-Oxygen-Neon white dwarfs generating least (left) and most (right) Nickel-56.
-DOI: [doi.org/10.3847/1538-4357/acf658](doi.org/10.3847/1538-4357/acf658)](research/publications/pub0024/pub0024_f6.png "Density profiles of thermonuclear supernova simulations from initial Carbon-Oxygen-Neon white dwarfs generating least (left) and most (right) Nickel-56."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/acf658](https://www.doi.org/10.3847/1538-4357/acf658)](research/publications/pub0024/pub0024_f6.png "Density profiles of thermonuclear supernova simulations from initial Carbon-Oxygen-Neon white dwarfs generating least (left) and most (right) Nickel-56."){group=\"pub-gallery\"}
 
 C. Feldman, N. Gutierrez, E. Eisenberg, D. E. Willcox, D. M. Townsley, A. C. Calder
 
 2023, Astrophysical Journal, 959, 112
 
-[doi.org/10.3847/1538-4357/acf658](doi.org/10.3847/1538-4357/acf658)
+[https://www.doi.org/10.3847/1538-4357/acf658](https://www.doi.org/10.3847/1538-4357/acf658)
 
 ## 23. ERF: Energy Research and Forecasting
 
 ![Logo of the Journal of Open Source Software, used under the CC BY 4.0 License.
-DOI: [doi.org/10.21105/joss.05202](doi.org/10.21105/joss.05202)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.21105/joss.05202](https://www.doi.org/10.21105/joss.05202)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\" width=50%}
 
 A. Almgren, A. Lattanzi, R. Haque, P. Jha, B. Kosovic, J. Mirocha, B. Perry, E. Quon, M. Sanders, D. Wiersema, D. Willcox, X. Yuan, W. Zhang
 
 2023, Journal of Open Source Software, 8, 87
 
-[doi.org/10.21105/joss.05202](doi.org/10.21105/joss.05202)
+[https://www.doi.org/10.21105/joss.05202](https://www.doi.org/10.21105/joss.05202)
 
 ## 22. Particle-in-Cell Simulations of Relativistic Magnetic Reconnection with Advanced Maxwell Solver Algorithms
 
 ![Secondary plasmoid reconnection event shown before (top) and after (bottom) initially evolving from a relativistic transverse current sheet.
-DOI: [doi.org/10.3847/1538-4357/acd75b](doi.org/10.3847/1538-4357/acd75b)](research/publications/pub0022/pub0022_f2.png "Secondary plasmoid reconnection event shown before (top) and after (bottom) initially evolving from a relativistic transverse current sheet."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/acd75b](https://www.doi.org/10.3847/1538-4357/acd75b)](research/publications/pub0022/pub0022_f2.png "Secondary plasmoid reconnection event shown before (top) and after (bottom) initially evolving from a relativistic transverse current sheet."){group=\"pub-gallery\"}
 
 H. Klion, R. Jambunathan, M. E. Rowan, E. Yang, D. Willcox, J. L. Vay, R. Lehe, A. Myers, A. Huebl, W. Zhang
 
 2023, Astrophysical Journal, 952, 8
 
-[doi.org/10.3847/1538-4357/acd75b](doi.org/10.3847/1538-4357/acd75b)
+[https://www.doi.org/10.3847/1538-4357/acd75b](https://www.doi.org/10.3847/1538-4357/acd75b)
 
 ## 21. pynucastro: A Python Library for Nuclear Astrophysics
 
 ![A pynucastro reaction network illustrating the nuclei and reaction rate links for nuclear Magnesium burning including the alpha chain and nearby odd-numbered nuclei.
-DOI: [doi.org/10.3847/1538-4357/acbaff](doi.org/10.3847/1538-4357/acbaff)](research/publications/pub0021/pub0021_f5.png "A pynucastro reaction network illustrating the nuclei and reaction rate links for nuclear Magnesium burning including the alpha chain and nearby odd-numbered nuclei."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/acbaff](https://www.doi.org/10.3847/1538-4357/acbaff)](research/publications/pub0021/pub0021_f5.png "A pynucastro reaction network illustrating the nuclei and reaction rate links for nuclear Magnesium burning including the alpha chain and nearby odd-numbered nuclei."){group=\"pub-gallery\"}
 
 A. Smith Clark, E. T. Johnson, Z. Chen, K. Eiden, D. E. Willcox, B. Boyd, L. Cao, C. J. DeGrendele, M. Zingale
 
 2023, Astrophysical Journal, 947, 65
 
-[doi.org/10.3847/1538-4357/acbaff](doi.org/10.3847/1538-4357/acbaff)
+[https://www.doi.org/10.3847/1538-4357/acbaff](https://www.doi.org/10.3847/1538-4357/acbaff)
 
 ## 20. Neural Networks for Nuclear Reactions in MAESTROeX
 
 ![Carbon fusion flame profiles illustrating our machine learning model (dots) compares very favorably to implicit time integration for reactions (lines) on the laminar test case under study.
-DOI: [doi.org/10.3847/1538-4357/ac9a4b](doi.org/10.3847/1538-4357/ac9a4b)](research/publications/pub0020/pub0020_f13.png "Carbon fusion flame profiles illustrating our machine learning model (dots) compares very favorably to implicit time integration for reactions (lines) on the laminar test case under study."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/ac9a4b](https://www.doi.org/10.3847/1538-4357/ac9a4b)](research/publications/pub0020/pub0020_f13.png "Carbon fusion flame profiles illustrating our machine learning model (dots) compares very favorably to implicit time integration for reactions (lines) on the laminar test case under study."){group=\"pub-gallery\"}
 
 D. Fan, D. E. Willcox, C. DeGrendele, M. Zingale, A. Nonaka
 
 2022, Astrophysical Journal, 940, 134
 
-[doi.org/10.3847/1538-4357/ac9a4b](doi.org/10.3847/1538-4357/ac9a4b)
+[https://www.doi.org/10.3847/1538-4357/ac9a4b](https://www.doi.org/10.3847/1538-4357/ac9a4b)
 
 ## 19. Dark Matter from Axion Strings with Adaptive Mesh Refinement
 
 ![Three-dimensional simulation evolving the axion field over cosmological time, illustrating the axion energy density and axion string structures at late times.
-DOI: [doi.org/10.1038/s41467-022-28669-y](doi.org/10.1038/s41467-022-28669-y)](research/publications/pub0019/pub0019_f1_axion_vr.png "Three-dimensional simulation evolving the axion field over cosmological time, illustrating the axion energy density and axion string structures at late times."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1038/s41467-022-28669-y](https://www.doi.org/10.1038/s41467-022-28669-y)](research/publications/pub0019/pub0019_f1_axion_vr.png "Three-dimensional simulation evolving the axion field over cosmological time, illustrating the axion energy density and axion string structures at late times."){group=\"pub-gallery\"}
 
 M. Buschmann, J. W. Foster, A. Hook, A. Peterson, D. E. Willcox, W. Zhang, B. R. Safdi
 
 2022, Nature Communications, 13, 1
 
-[doi.org/10.1038/s41467-022-28669-y](doi.org/10.1038/s41467-022-28669-y)
+[https://www.doi.org/10.1038/s41467-022-28669-y](https://www.doi.org/10.1038/s41467-022-28669-y)
 
 ## 18. Neutrino Fast Flavor Instability in Three Dimensions
 
 ![Three-dimensional, all-angle Particle-in-Cell simulation of a three-flavor neutrino fast flavor instability. Volume rendering shown illustrates the fastest-growing electron-muon neutrino flavor instability, seen in shaded contours which evenly subdivide the angular electron-muon phase at 0 (blue), two-thirds pi (white), and four-thirds pi (red).
-DOI: [doi.org/10.1103/PhysRevD.104.103023](doi.org/10.1103/PhysRevD.104.103023)](research/publications/pub0018/pub0018_f2_emu_3d_ffi.png "Three-dimensional, all-angle Particle-in-Cell simulation of a three-flavor neutrino fast flavor instability. Volume rendering shown illustrates the fastest-growing electron-muon neutrino flavor instability, seen in shaded contours which evenly subdivide the angular electron-muon phase at 0 (blue), two-thirds pi (white), and four-thirds pi (red)."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1103/PhysRevD.104.103023](https://www.doi.org/10.1103/PhysRevD.104.103023)](research/publications/pub0018/pub0018_f2_emu_3d_ffi.png "Three-dimensional, all-angle Particle-in-Cell simulation of a three-flavor neutrino fast flavor instability. Volume rendering shown illustrates the fastest-growing electron-muon neutrino flavor instability, seen in shaded contours which evenly subdivide the angular electron-muon phase at 0 (blue), two-thirds pi (white), and four-thirds pi (red)."){group=\"pub-gallery\"}
 
 S. Richers, D. E. Willcox, N. M. Ford
 
 2021, Physical Review D, 104, 103023
 
-[doi.org/10.1103/PhysRevD.104.103023](doi.org/10.1103/PhysRevD.104.103023)
+[https://www.doi.org/10.1103/PhysRevD.104.103023](https://www.doi.org/10.1103/PhysRevD.104.103023)
 
 ## 17. Practical Effects of Integrating Temperature with Strang Split Reactions
 
 ![Space and time convergence of fluid density for three variations of the Strang method for reacting hydrodynamics.
-DOI: [doi.org/10.3847/2515-5172/abf3cb](doi.org/10.3847/2515-5172/abf3cb)](research/publications/pub0017/pub0017_f1.png "Space and time convergence of fluid density for three variations of the Strang method for reacting hydrodynamics."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/2515-5172/abf3cb](https://www.doi.org/10.3847/2515-5172/abf3cb)](research/publications/pub0017/pub0017_f1.png "Space and time convergence of fluid density for three variations of the Strang method for reacting hydrodynamics."){group=\"pub-gallery\"}
 
 M. Zingale, M. P. Katz, D. E. Willcox, A. Harpole
 
 2021, Research Notes of the AAS, 5, 71
 
-[doi.org/10.3847/2515-5172/abf3cb](doi.org/10.3847/2515-5172/abf3cb)
+[https://www.doi.org/10.3847/2515-5172/abf3cb](https://www.doi.org/10.3847/2515-5172/abf3cb)
 
 ## 16. Dynamics of Laterally Propagating Flames in X-Ray Bursts. II. Realistic Burning and Rotation
 
 ![Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface.
-DOI: [doi.org/10.3847/1538-4357/abee87](doi.org/10.3847/1538-4357/abee87)](research/publications/pub0016/pub0016_f6.png "Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/abee87](https://www.doi.org/10.3847/1538-4357/abee87)](research/publications/pub0016/pub0016_f6.png "Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface."){group=\"pub-gallery\"}
 
 A. Harpole, N. M. Ford, K. Eiden, M. Zingale, D. E. Willcox, Y. Cavecchi, M. P. Katz
 
 2021, Astrophysical Journal, 912, 36
 
-[doi.org/10.3847/1538-4357/abee87](doi.org/10.3847/1538-4357/abee87)
+[https://www.doi.org/10.3847/1538-4357/abee87](https://www.doi.org/10.3847/1538-4357/abee87)
 
 ## 15. Particle-in-cell Simulation of the Neutrino Fast Flavor Instability
 
 ![Time evolution of the average neutrino density over one-half nanosecond showing the fastest axially symmetric instability.
-DOI: [doi.org/10.1103/PhysRevD.103.083013](doi.org/10.1103/PhysRevD.103.083013)](research/publications/pub0015/pub0015_f6.png "Time evolution of the average neutrino density over one-half nanosecond showing the fastest axially symmetric instability."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1103/PhysRevD.103.083013](https://www.doi.org/10.1103/PhysRevD.103.083013)](research/publications/pub0015/pub0015_f6.png "Time evolution of the average neutrino density over one-half nanosecond showing the fastest axially symmetric instability."){group=\"pub-gallery\"}
 
 S. Richers, D. E. Willcox, N. M. Ford, A. Myers
 
 2021, Physical Review D, 103, 083013
 
-[doi.org/10.1103/PhysRevD.103.083013](doi.org/10.1103/PhysRevD.103.083013)
+[https://www.doi.org/10.1103/PhysRevD.103.083013](https://www.doi.org/10.1103/PhysRevD.103.083013)
 
 ## 14. Preparing Nuclear Astrophysics for Exascale
 
 ![Density contours and the thermonuclear ignition point for colliding white dwarf stars simulated with the CASTRO code.
-DOI: [doi.org/10.1109/SC41405.2020.00095](doi.org/10.1109/SC41405.2020.00095)](research/publications/pub0014/pub0014_f4.png "Density contours and the thermonuclear ignition point for colliding white dwarf stars simulated with the CASTRO code."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1109/SC41405.2020.00095](https://www.doi.org/10.1109/SC41405.2020.00095)](research/publications/pub0014/pub0014_f4.png "Density contours and the thermonuclear ignition point for colliding white dwarf stars simulated with the CASTRO code."){group=\"pub-gallery\"}
 
 M. Katz, A. Almgren, M. Barrios Sazo, K. Eiden, K. Gott, A. Harpole, J. Sexton, D. Willcox, W. Zhang, M. Zingale
 
 2020, Supercomputing 20 (SC20)
 
-[doi.org/10.1109/SC41405.2020.00095](doi.org/10.1109/SC41405.2020.00095)
+[https://www.doi.org/10.1109/SC41405.2020.00095](https://www.doi.org/10.1109/SC41405.2020.00095)
 
 ## 13. CASTRO: A Massively Parallel Compressible Astrophysics Simulation Code
 
 ![Logo of the Journal of Open Source Software, used under the CC BY 4.0 License.
-DOI: [doi.org/10.21105/joss.02513](doi.org/10.21105/joss.02513)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.21105/joss.02513](https://www.doi.org/10.21105/joss.02513)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\" width=50%}
 
 A. Almgren, M. Barrios Sazo, J. Bell, A. Harpole, M. Katz, J. Sexton, D. Willcox, W. Zhang, M. Zingale
 
 2020, Journal of Open Source Software, 5, 54, 2513
 
-[doi.org/10.21105/joss.02513](doi.org/10.21105/joss.02513)
+[https://www.doi.org/10.21105/joss.02513](https://www.doi.org/10.21105/joss.02513)
 
 ## 12. Dynamics of Laterally Propagating Flames in X-Ray Bursts. I. Burning Front Structure
 
 ![Mean molecular weight within a Helium fusion flame on a neutron star surface.
-DOI: [doi.org/10.3847/1538-4357/ab80bc](doi.org/10.3847/1538-4357/ab80bc)](research/publications/pub0012/pub0012_f4.png "Mean molecular weight within a Helium fusion flame on a neutron star surface."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/ab80bc](https://www.doi.org/10.3847/1538-4357/ab80bc)](research/publications/pub0012/pub0012_f4.png "Mean molecular weight within a Helium fusion flame on a neutron star surface."){group=\"pub-gallery\"}
 
 K. Eiden, M. Zingale, A. Harpole, D. Willcox, Y. Cavecchi, M. P. Katz
 
 2020, Astrophysical Journal, 894, 6
 
-[doi.org/10.3847/1538-4357/ab80bc](doi.org/10.3847/1538-4357/ab80bc)
+[https://www.doi.org/10.3847/1538-4357/ab80bc](https://www.doi.org/10.3847/1538-4357/ab80bc)
 
 ## 11. The Castro AMR Simulation Code: Current and Future Developments
 
 ![Weak scaling on GPU and CPU for the CASTRO code running a white dwarf merger simulation on the Summit supercomputer.
-DOI: [doi.org/10.1088/1742-6596/1623/1/012021](doi.org/10.1088/1742-6596/1623/1/012021)](research/publications/pub0011/pub0011_f1.png "Weak scaling on GPU and CPU for the CASTRO code running a white dwarf merger simulation on the Summit supercomputer."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1623/1/012021](https://www.doi.org/10.1088/1742-6596/1623/1/012021)](research/publications/pub0011/pub0011_f1.png "Weak scaling on GPU and CPU for the CASTRO code running a white dwarf merger simulation on the Summit supercomputer."){group=\"pub-gallery\"}
 
 M. Zingale, A. S. Almgren, M. Barrios Sazo, J. B. Bell, K. Eiden, A. Harpole, M. P. Katz, A. J. Nonaka, D. E. Willcox, W. Zhang
 
 2020, Journal of Physics: Conference Series, 1623, 012021
 
-[doi.org/10.1088/1742-6596/1623/1/012021](doi.org/10.1088/1742-6596/1623/1/012021)
+[https://www.doi.org/10.1088/1742-6596/1623/1/012021](https://www.doi.org/10.1088/1742-6596/1623/1/012021)
 
 ## 10. Modelling low Mach number stellar hydrodynamics with MAESTROeX
 
 ![GPU speedup for MAESTROeX core subroutines on the Summit supercomputer.
-DOI: [doi.org/10.1088/1742-6596/1623/1/012015](doi.org/10.1088/1742-6596/1623/1/012015)](research/publications/pub0010/pub0010_f1.png "GPU speedup for MAESTROeX core subroutines on the Summit supercomputer."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1623/1/012015](https://www.doi.org/10.1088/1742-6596/1623/1/012015)](research/publications/pub0010/pub0010_f1.png "GPU speedup for MAESTROeX core subroutines on the Summit supercomputer."){group=\"pub-gallery\"}
 
 A. Harpole, D. Fan, M. P. Katz, A. J. Nonaka, D. E. Willcox, M. Zingale
 
 2020, Journal of Physics: Conference Series, 1623, 012015
 
-[doi.org/10.1088/1742-6596/1623/1/012015](doi.org/10.1088/1742-6596/1623/1/012015)
+[https://www.doi.org/10.1088/1742-6596/1623/1/012015](https://www.doi.org/10.1088/1742-6596/1623/1/012015)
 
 ## 9. MAESTROeX: A Massively Parallel Low Mach Number Astrophysical Solver
 
 ![Logo of the Journal of Open Source Software, used under the CC BY 4.0 License.
-DOI: [doi.org/10.21105/joss.01757](doi.org/10.21105/joss.01757)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.21105/joss.01757](https://www.doi.org/10.21105/joss.01757)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\" width=50%}
 
 D. Fan, A. Nonaka, A. Almgren, D. Willcox, A. Harpole, M. Zingale
 
 2019, Journal of Open Source Software, 4, 43, 1757
 
-[doi.org/10.21105/joss.01757](doi.org/10.21105/joss.01757)
+[https://www.doi.org/10.21105/joss.01757](https://www.doi.org/10.21105/joss.01757)
 
 ## 8. SN Ia Explosions from Hybrid Carbon-Oxygen-Neon White Dwarf Progenitors That Have Mixed During Cooling
 
 ![Estimated Nickel-56 mass produced by mixed, hybrid Carbon-Oxygen-Neon white dwarf models.
-DOI: [doi.org/10.3847/1538-4357/ab511a](doi.org/10.3847/1538-4357/ab511a)](research/publications/pub0008/pub0008_f3.png "Estimated Nickel-56 mass produced by mixed, hybrid Carbon-Oxygen-Neon white dwarf models."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/1538-4357/ab511a](https://www.doi.org/10.3847/1538-4357/ab511a)](research/publications/pub0008/pub0008_f3.png "Estimated Nickel-56 mass produced by mixed, hybrid Carbon-Oxygen-Neon white dwarf models."){group=\"pub-gallery\"}
 
 C. N. Augustine, D. E. Willcox, J. Brooks, D. M. Townsley, A. C. Calder
 
 2019, Astrophysical Journal, 887, 188
 
-[doi.org/10.3847/1538-4357/ab511a](doi.org/10.3847/1538-4357/ab511a)
+[https://www.doi.org/10.3847/1538-4357/ab511a](https://www.doi.org/10.3847/1538-4357/ab511a)
 
 ## 7. Toward Resolved Simulations of Burning Fronts in Thermonuclear X-ray Bursts
 
 ![Nuclear energy generation rate inside a helium flame on a neutron star surface.
-DOI: [doi.org/10.1088/1742-6596/1225/1/012005](doi.org/10.1088/1742-6596/1225/1/012005)](research/publications/pub0007/pub0007_f1.png "Nuclear energy generation rate inside a helium flame on a neutron star surface."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1225/1/012005](https://www.doi.org/10.1088/1742-6596/1225/1/012005)](research/publications/pub0007/pub0007_f1.png "Nuclear energy generation rate inside a helium flame on a neutron star surface."){group=\"pub-gallery\"}
 
 M. Zingale, K. Eiden, Y. Cavecchi, A. Harpole, J. B. Bell, M. Chang, I. Hawke, M. P. Katz, C. M. Malone, A. J. Nonaka, D. E. Willcox, W. Zhang
 
 2019, Journal of Physics: Conference Series, 1225, 012005
 
-[doi.org/10.1088/1742-6596/1225/1/012005](doi.org/10.1088/1742-6596/1225/1/012005)
+[https://www.doi.org/10.1088/1742-6596/1225/1/012005](https://www.doi.org/10.1088/1742-6596/1225/1/012005)
 
 ## 6. Thermonuclear (Type Ia) Supernovae and Progenitor Evolution
 
 ![Specific energy generation rate in a simulated white dwarf cross section resulting from carbon fusion and A=23 Urca reactions.
-DOI: [doi.org/10.1088/1742-6596/1225/1/012002](doi.org/10.1088/1742-6596/1225/1/012002)](research/publications/pub0006/pub0006_f3.png "Specific energy generation rate in a simulated white dwarf cross section resulting from carbon fusion and A=23 Urca reactions."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1225/1/012002](https://www.doi.org/10.1088/1742-6596/1225/1/012002)](research/publications/pub0006/pub0006_f3.png "Specific energy generation rate in a simulated white dwarf cross section resulting from carbon fusion and A=23 Urca reactions."){group=\"pub-gallery\"}
 
 A. C. Calder, D. E. Willcox, C. J. DeGrendele, D. Shangase, M. Zingale, D. M. Townsley
 
 2019, Journal of Physics: Conference Series, 1225, 012002
 
-[doi.org/10.1088/1742-6596/1225/1/012002](doi.org/10.1088/1742-6596/1225/1/012002)
+[https://www.doi.org/10.1088/1742-6596/1225/1/012002](https://www.doi.org/10.1088/1742-6596/1225/1/012002)
 
 ## 5. Quantification of Incertitude in Black Box Simulation Codes
 
 ![Surface plot showing model white dwarf's mass dependence on wind parameters driving mass loss.
-DOI: [doi.org/10.1088/1742-6596/1031/1/012016](doi.org/10.1088/1742-6596/1031/1/012016)](research/publications/pub0005/pub0005_f5.png "Surface plot showing model white dwarf's mass dependence on wind parameters driving mass loss."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1031/1/012016](https://www.doi.org/10.1088/1742-6596/1031/1/012016)](research/publications/pub0005/pub0005_f5.png "Surface plot showing model white dwarf's mass dependence on wind parameters driving mass loss."){group=\"pub-gallery\"}
 
 A. C. Calder, M. M. Hoffman, D. E. Willcox, M. P. Katz, F. D. Swesty, S. Ferson
 
 2018, Journal of Physics: Conference Series, 1031, 012016
 
-[doi.org/10.1088/1742-6596/1031/1/012016](doi.org/10.1088/1742-6596/1031/1/012016)
+[https://www.doi.org/10.1088/1742-6596/1031/1/012016](https://www.doi.org/10.1088/1742-6596/1031/1/012016)
 
 ## 4. pynucastro: an interface to nuclear reaction rates and code generator for reaction network equations
 
 ![Logo of the Journal of Open Source Software, used under the CC BY 4.0 License.
-DOI: [doi.org/10.21105/joss.00588](doi.org/10.21105/joss.00588)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.21105/joss.00588](https://www.doi.org/10.21105/joss.00588)](research/publications/JOSS/JOSS_1000x1000.png "Logo of the Journal of Open Source Software, used under the CC BY 4.0 License."){group=\"pub-gallery\" width=50%}
 
 D. E. Willcox, M. Zingale
 
 2018, Journal of Open Source Software, 3(23), 588
 
-[doi.org/10.21105/joss.00588](doi.org/10.21105/joss.00588)
+[https://www.doi.org/10.21105/joss.00588](https://www.doi.org/10.21105/joss.00588)
 
 ## 3. Meeting the Challenges of Modeling Astrophysical Thermonuclear Explosions: Castro, Maestro, and the AMReX Astrophysics Suite
 
 ![Density contours from a simulation of merging white dwarfs.
-DOI: [doi.org/10.1088/1742-6596/1031/1/012024](doi.org/10.1088/1742-6596/1031/1/012024)](research/publications/pub0003/pub0003_f6.png "Density contours from a simulation of merging white dwarfs."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/1031/1/012024](https://www.doi.org/10.1088/1742-6596/1031/1/012024)](research/publications/pub0003/pub0003_f6.png "Density contours from a simulation of merging white dwarfs."){group=\"pub-gallery\"}
 
 M. Zingale, A. S. Almgren, M. G. Barrios Sazo, V. E. Beckner, J. B. Bell, B. Friesen, A. M. Jacobs, M. P. Katz, C. M. Malone, A. J. Nonaka, D. E. Willcox, W. Zhang
 
 2018, Journal of Physics: Conference Series, 1031, 012024
 
-[doi.org/10.1088/1742-6596/1031/1/012024](doi.org/10.1088/1742-6596/1031/1/012024)
+[https://www.doi.org/10.1088/1742-6596/1031/1/012024](https://www.doi.org/10.1088/1742-6596/1031/1/012024)
 
 ## 2. Cosmic Chandlery with Thermonuclear Supernovae
 
 ![Deflagration-to-detonation transition for a simulated C-O white dwarf.
-DOI: [doi.org/10.1088/1742-6596/837/1/012005](doi.org/10.1088/1742-6596/837/1/012005)](research/publications/pub0002/pub0002_f1.png "Deflagration-to-detonation transition for a simulated C-O white dwarf."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1088/1742-6596/837/1/012005](https://www.doi.org/10.1088/1742-6596/837/1/012005)](research/publications/pub0002/pub0002_f1.png "Deflagration-to-detonation transition for a simulated C-O white dwarf."){group=\"pub-gallery\"}
 
 A. C. Calder, B. K. Krueger, A. P. Jackson, D. E. Willcox, B. J. Miles, D. M. Townsley
 
 2017, Journal of Physics: Conference Series, 837, 012005
 
-[doi.org/10.1088/1742-6596/837/1/012005](doi.org/10.1088/1742-6596/837/1/012005)
+[https://www.doi.org/10.1088/1742-6596/837/1/012005](https://www.doi.org/10.1088/1742-6596/837/1/012005)
 
 ## 1. Type Ia Supernova Explosions From Hybrid Carbon-Oxygen-Neon White Dwarf Progenitors
 
 ![Progress of the burning front into the stellar core for one simulated hybrid C-O-Ne white dwarf.
-DOI: [doi.org/10.3847/0004-637X/832/1/13](doi.org/10.3847/0004-637X/832/1/13)](research/publications/pub0001/pub0001_f15.png "Progress of the burning front into the stellar core for one simulated hybrid C-O-Ne white dwarf."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.3847/0004-637X/832/1/13](https://www.doi.org/10.3847/0004-637X/832/1/13)](research/publications/pub0001/pub0001_f15.png "Progress of the burning front into the stellar core for one simulated hybrid C-O-Ne white dwarf."){group=\"pub-gallery\"}
 
 D. E. Willcox, D. M. Townsley, A. C. Calder, P. Denissenkov, F. Herwig
 
 2016, Astrophysical Journal, 832, 13
 
-[doi.org/10.3847/0004-637X/832/1/13](doi.org/10.3847/0004-637X/832/1/13)
+[https://www.doi.org/10.3847/0004-637X/832/1/13](https://www.doi.org/10.3847/0004-637X/832/1/13)
 

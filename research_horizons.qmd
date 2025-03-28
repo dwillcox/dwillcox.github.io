@@ -1,0 +1,19 @@
+# What's Next?
+
+Quite a lot! Here are some research directions I am looking forward to pursuing
+next:
+
+- Applying forward simulation techniques I've developed to novel scientific
+  contexts
+
+- Efficient forward simulations for solving inverse problems
+
+- Incorporating data science of observations to better guide numerical
+  simulations to the right initial hypotheses
+
+- Combining Machine Learning surrogate modeling with multiscale simulation
+  frameworks with reliable error control
+
+- Adaptive subgrid methods that more efficiently use computational resources by
+  adapting our accuracy to each term in the PDE system we model
+

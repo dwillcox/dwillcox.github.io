@@ -1,4 +1,16 @@
 CV:
+  Introduction: |
+    When I started college in 2007, I set out inspired to figure out how the world works.
+    
+    My quest naturally ventured into engineering, then physics and computation, always finding more to learn even after completing graduate school in 2018.
+
+    Now as a physicist and computational scientist, I use computer algorithms to research the world around us.
+    
+    I like working on open-source scientific codes and openly publishing my findings whenever possible because I have, in turn, learned quite a lot from open-access research papers and public codes.
+
+    Similarly, I enjoy teaching, advising, and giving public talks so I can make science accessible for others just as my many academic and research mentors have done for me over the years.
+
+    What follows is a brief overview of my journey and research career so far.
   Employment:
     MostRecentPosition:
       introduction: 
@@ -54,13 +66,13 @@ CV:
           status: "Partially Funded"
           authorship: "Principal Investigator"
           institution: "Berkeley Lab FY 2024 Multi-Area LDRD"
-          coauthors: "Co-Investigator: Hector Garcia Martin (LBNL, Biosciences Area)"
+          coauthors: "Co-Investigator Hector Garcia Martin (LBNL, Biosciences Area)"
           name: "Bioreactor digital twinning - Accelerating bioprocess scaling by combining computational fluid dynamics with metabolic modeling"
         - year: 2023
           status: "Not Funded"
           authorship: "Principal Investigator"
           institution: "DOE Wind Energy Technologies Office"
-          coauthors: "Co-Investigators: Adam Lavely (LBNL), Ganesh Vijayakumar (NREL)"
+          coauthors: "Co-Investigators Adam Lavely (LBNL) and Ganesh Vijayakumar (NREL)"
           name: "Advancing AMR-Wind Turbine Simulations With Machine Learning"
         - year: 2023
           status: "Not Funded"
@@ -237,13 +249,13 @@ CV:
               description: "Teaching assistant for an undergraduate astronomy course."
             - year: "Spring 2013"
               name: "Modern Physics"
-              description: "Instructor for an undergraduate laboratory on relativity and quantum mechanics."
+              description: "Teaching assistant instructor for an undergraduate laboratory on relativity and quantum mechanics."
             - year: "Summer 2012"
               name: "Introduction to Calculus II"
               description: "Instructor for a 3-week course on integral calculus for incoming freshman students."
             - year: "2012"
               name: "Introductory Physics"
-              description: "Instructor for undergraduate laboratory on electricity and magnetism."
+              description: "Teaching assistant instructor for undergraduate laboratory on electricity and magnetism."
         - institution: LeTourneau University
           courses:
             - year: "Fall, 2008-2010"

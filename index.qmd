@@ -1,7 +1,21 @@
----
-title: "research-website"
----
+![](research/gallery/willcox_lbl_hs_circ.png){width=20% fig-align="center"}
 
-This is a Quarto website.
+# Welcome!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome, I'm Don Willcox, a physicist and computational scientist.
+
+Here, you'll find an array of science I research using math and computer code.
+
+For a tour of my research highlights, see my [Research page](research.qmd).
+
+You can also watch some of my recorded talks or see a full list on my [Talks page](talks.qmd).
+
+Or if you are interested in my publications, please see my [Publications gallery](publications.qmd).
+
+For all my other career details, you can download or view my CV on my [CV page](cv.qmd).
+
+Finally, maybe you would like to learn more about me personally or contact me? In that case, please see my [Bio page](bio.qmd).
+
+Warm Regards,
+
+Don
