@@ -25,7 +25,7 @@ AMReX allows computational scientists to focus our computing resources on the pa
 Our success developing ERF enabled our team to simulate a three-dimensional supercell storm,
 capturing the storm winds along with the water cycle of rainfall, evaporation, and cloud condensation that keeps the storm active.
 
-![ERF Supercell Simulation](research/publications/pub0026/pub0026_f11.png){width=50% fig-align="center"}
+![ERF Supercell Simulation](research/publications/pub0026/pub0026_f11.png)
 
 We published our ERF results along with a suite of verification and validation tests in @lattanzi_erf_2024.
 

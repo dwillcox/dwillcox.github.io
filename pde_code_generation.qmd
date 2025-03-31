@@ -82,7 +82,7 @@ STvAR enabled us to create a numerical solver for general relativity and then
 simulate black hole mergers to compute their radiated gravitational wave
 signature that an Earth-based detector like LIGO could measure.
 
-![Simulated binary black hole inspiral traces black hole centers through (3+1) spacetime and radiates the characteristic chirp waveform.](research/publications/pub0025/pub0025_inspiral_chirp.png){width=50% fig-align="center"}
+![Simulated binary black hole inspiral traces black hole centers through (3+1) spacetime and radiates the characteristic chirp waveform.](research/publications/pub0025/pub0025_inspiral_chirp.png)
 
 We published our code generation validation work for general relativity in @peterson_codegen_2023.
 
