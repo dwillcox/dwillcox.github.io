@@ -11,7 +11,7 @@ website:
       - href: index.qmd
         text: Home
       - sidebar:research
-      - href: software.qmd
+      - href: codes.qmd
         text: Codes
       - talks.qmd
       - publications.qmd

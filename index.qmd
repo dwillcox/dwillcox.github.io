@@ -8,6 +8,8 @@ Here, you'll find an array of science I research using math and computer code.
 
 For a tour of my research highlights, see my [Research page](research.qmd).
 
+For an overview of scientific codes I develop, see my [Codes page](codes.qmd).
+
 You can also watch some of my recorded talks or see a full list on my [Talks page](talks.qmd).
 
 Or if you are interested in my publications, please see my [Publications gallery](publications.qmd).
