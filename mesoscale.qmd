@@ -1,0 +1,32 @@
+# Energy Research and Forecasting
+
+::: {.callout-note}
+# Get the ERF code for mesoscale weather simulations
+
+ERF is open source and freely available at the [ERF GitHub](https://github.com/erf-model/erf).
+:::
+
+At LBNL, I worked as a project scientist to help write the Energy Research and Forecasting (ERF) code for mesoscale weather modeling.
+
+Mesoscale modeling is exactly the calculations you need to do to figure out where
+along a coastline is the most efficient place to generate power with a wind turbine farm.
+
+To optimize your wind turbine output, you'll need to calculate the expected wind speeds year round
+as the wind currents around the Earth shift throughout the year.
+You'll also need to account for any nearby mountains and the unique interactions between the ocean and Earth's atmosphere.
+
+We wrote the ERF code to help researchers answer these exact questions and
+enable engineers to design efficient wind power generation solutions.
+
+We built ERF on top of the adaptive mesh refinement (AMR) library AMReX, which our CCSE group at LBNL develops.
+
+AMReX allows computational scientists to focus our computing resources on the parts of our simulations that require greatest accuracy.
+
+Our success developing ERF enabled our team to simulate a three-dimensional supercell storm,
+capturing the storm winds along with the water cycle of rainfall, evaporation, and cloud condensation that keeps the storm active.
+
+![ERF Supercell Simulation](research/publications/pub0026/pub0026_f11.png){width=50% fig-align="center"}
+
+We published our ERF results along with a suite of verification and validation tests in @lattanzi_erf_2024.
+
+We also published the ERF code itself in the Journal of Open Source Software (JOSS) in @almgren_erf_2023.

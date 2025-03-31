@@ -2,7 +2,13 @@
 
 ## X-ray Bursting Neutron Stars
 
-Solving nuclear reactions on GPUs enabled accelerated nuclear astrophysics simulations.
+::: {.callout-note}
+# Get the Castro code for Compressible ASTROphysics
+
+Our Castro code and our simulation inputs files are open-source and freely available at the [Castro GitHub](https://github.com/AMReX-Astro/Castro).
+:::
+
+Solving nuclear reactions on GPUs enabled accelerated nuclear astrophysics simulations using the Castro compressible hydrodynamics code.
 For more details about how we accelerated nuclear reactions, see [Nuclear Reactions](nuclear_reactions.qmd).
 
 My GPU work enabled our nuclear astrophysics collaboration to simulate detailed
@@ -20,6 +26,12 @@ hiding below its atmosphere.
 For details, see @zingale_towardxrb_2019, @eiden_xrb1_2020, and @harpole_xrb2_2021.
 
 ## Particle Acceleration in Neutron Star Environments
+
+::: {.callout-note}
+# Get the WarpX code for Electromagnetic PIC
+
+The WarpX code we used is open-source and freely available at the [WarpX GitHub](https://github.com/BLAST-WarpX/warpx).
+:::
 
 At LBL, I also collaborated with scientists who worked on electromagnetic
 modeling for particle accelerator physics. Together, we started a project to

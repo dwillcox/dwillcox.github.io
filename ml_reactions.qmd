@@ -1,10 +1,18 @@
 # Machine Learning For Surrogate Models
 
+::: {.callout-note}
+# Get MAESTROeX
+
+Our flames with surrogate ML models used our low-Mach hydrodynamics code MAESTROeX.
+
+MAESTROeX is an open-source code, freely available on the [MAESTROeX GitHub](https://github.com/AMReX-Astro/MAESTROeX).
+:::
+
 Nuclear reactions are computationally intensive!
 
 After working to accelerate our reaction solvers on GPUs, I saw the great
 utility of machine learning for assisting PDE solvers and started a project to
-address an important question the astrophysics community had not yet
+address an important niche question the astrophysics community had not yet
 researched.
 
 What if we could replace expensive, time-consuming reaction network solvers

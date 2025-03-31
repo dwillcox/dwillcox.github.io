@@ -2,6 +2,12 @@
 
 ## Mathematically Modeling Nuclear Reactions
 
+::: {.callout-note}
+# Get pynucastro
+
+pynucastro is open-source and freely available at the [pynucastro GitHub](https://github.com/pynucastro/pynucastro).
+:::
+
 Nuclear physics powers a vast array of high energy astrophysics events, from
 fusion in stars to supernovae and neutron star dynamics. Nuclear reactions
 between atomic nuclei within stellar environments generate energy for starlight
@@ -24,6 +30,12 @@ students alike can easily:
 For details, see @willcox_pynucastro_2018 and @smith_pynucastro_2023.
 
 ## Computationally Solving Nuclear Reactions
+
+::: {.callout-note}
+# Get our Microphysics Solvers
+
+Our Microphysics solvers are open-source and freely available at our [Microphysics GitHub](https://github.com/AMReX-Astro/Microphysics).
+:::
 
 Nuclear reaction equations actually look mathematically similar to rate
 equations for chemistry or biological populations. We solve any equations of

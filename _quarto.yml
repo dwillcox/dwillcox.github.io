@@ -11,6 +11,7 @@ website:
       - href: index.qmd
         text: Home
       - sidebar:research
+      - software.qmd
       - talks.qmd
       - publications.qmd
       - cv.qmd
@@ -40,6 +41,7 @@ website:
         - neutron_stars.qmd
         - neutrino_quantum_kinetics.qmd
         - pde_code_generation.qmd
+        - mesoscale.qmd
         - compsci_philosophy.qmd
         - research_horizons.qmd
 
