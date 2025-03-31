@@ -83,18 +83,20 @@ Berkeley, CA 94720
 
 ### Scientific Software
 
-* ongoing: Co-creator of the Emu simulation code for astrophysical neutrino quantum kinetics in 6-dimensional phase space
-    + [https://github.com/amrex-astro/Emu](https://github.com/amrex-astro/Emu)
-* ongoing: Core developer of the Castro simulation code for astrophysical radiation-hydrodynamics on adaptive meshes
-    + [https://github.com/amrex-astro/Castro](https://github.com/amrex-astro/Castro)
-* ongoing: Core developer of the StarKiller Microphysics code, a collection of publicly-available astrophysical microphysics routines and nuclear reaction network integrators
-    + [https://github.com/starkiller-astro/Microphysics](https://github.com/starkiller-astro/Microphysics)
-* ongoing: Co-developer of pynucastro, a publicly-available Python interface to the JINA Reaclib nuclear reaction rate database for rate visualization and ODE right hand side code generation in Python and C++
-    + [https://github.com/pynucastro/pynucastro](https://github.com/pynucastro/pynucastro)
-* ongoing: Co-creator of the StarSTRUQ github organization for publicly-available code implementing uncertainty quantification algorithms useful for stellar evolution calculations
-    + [https://github.com/StarSTRUQ](https://github.com/StarSTRUQ)
-* ongoing: Core developer of the ERF simulation code for large-scale (ie. mesoscopic) weather modeling
+* 2022-2024: Core developer of the ERF simulation code for large-scale (ie. mesoscopic) weather modeling
     + [https://github.com/erf-model/erf](https://github.com/erf-model/erf)
+* 2019-present: Co-creator of the Emu simulation code for astrophysical neutrino quantum kinetics in 6-dimensional phase space
+    + [https://github.com/AMReX-Astro/Emu](https://github.com/AMReX-Astro/Emu)
+* 2019-present: Co-creator of the STvAR Eulerian code generation framework for solving PDEs on adaptive meshes.
+    + [https://github.com/AMReX-Astro/STvAR](https://github.com/AMReX-Astro/STvAR)
+* 2018-present: Core developer of the Castro simulation code for astrophysical radiation-hydrodynamics on adaptive meshes
+    + [https://github.com/amrex-astro/Castro](https://github.com/amrex-astro/Castro)
+* 2017-present: Co-creator of the StarSTRUQ github organization for publicly-available code implementing uncertainty quantification algorithms useful for stellar evolution calculations
+    + [https://github.com/StarSTRUQ](https://github.com/StarSTRUQ)
+* 2016-present: Co-creator of pynucastro, a publicly-available Python interface to the JINA Reaclib nuclear reaction rate database for rate visualization and ODE right hand side code generation in Python and C++
+    + [https://github.com/pynucastro/pynucastro](https://github.com/pynucastro/pynucastro)
+* 2015-present: Core developer of the StarKiller Microphysics code, a collection of publicly-available astrophysical microphysics routines and nuclear reaction network integrators
+    + [https://github.com/starkiller-astro/Microphysics](https://github.com/starkiller-astro/Microphysics)
 
 ### Research Advising
 
