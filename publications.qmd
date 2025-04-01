@@ -4,7 +4,7 @@ lightbox: true
 
 # Publications
 
-As my publication record illustrates, I research best by collaborating with other scientists.
+As my publication record illustrates, I prefer to research by collaborating with other scientists.
 
 ## Publication Listings
 

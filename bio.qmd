@@ -26,9 +26,6 @@ modules in the large-scale codes I have developed.
 I'm also interested in using forward simulations and data science together with
 machine learning to more efficiently answer inverse scientific questions.
 
-To learn more about my research interests,
-see my [What's Next?](research_horizons.qmd) research page.
-
 Before joining Berkeley Lab, I completed my PhD in Physics at Stony Brook
 University in August 2018.
 

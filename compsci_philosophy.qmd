@@ -1,9 +1,10 @@
 # Computational Science Philosophy
 
-I am equally a computational scientist as I am a physicist. In fact, I consider
-all these tightly interrelated. I analyze research topics from a physics
-perspective. Then I use the tools of computation and applied mathematics to
-carry out science by testing and falsifying hypotheses.
+I am both a physicist and a computational scientist. I look at research topics
+from a physics perspective and ask "how does this work?" This question tends to
+motivate the "why" of research. Then I use the tools of computation and applied
+mathematics to carry out science by testing hypotheses, this is the "how" of
+research.
 
 ## My Approach To Computational Science
 
