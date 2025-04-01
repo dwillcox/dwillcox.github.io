@@ -1,6 +1,6 @@
 # Machine Learning For Surrogate Models
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get MAESTROeX
 
 Our flames with surrogate ML models used our low-Mach hydrodynamics code MAESTROeX.

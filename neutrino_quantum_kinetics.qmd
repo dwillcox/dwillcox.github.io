@@ -91,7 +91,7 @@ to solve the six-dimensional neutrino quantum kinetics problem.
 
 ## We Created Emu: A Six-Dimensional, Three-Flavor Code To Solve Neutrino Quantum Kinetics
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get Emu
 
 Emu is an open-source code, freely available on the [Emu GitHub](https://github.com/AMReX-Astro/Emu).

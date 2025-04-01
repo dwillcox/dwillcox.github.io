@@ -1,6 +1,6 @@
 # Energy Research and Forecasting
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get the ERF code for mesoscale weather simulations
 
 ERF is open source and freely available at the [ERF GitHub](https://github.com/erf-model/erf).

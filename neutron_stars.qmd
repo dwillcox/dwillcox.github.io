@@ -2,7 +2,7 @@
 
 ## X-ray Bursting Neutron Stars
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get the Castro code for Compressible ASTROphysics
 
 Our Castro code and our simulation inputs files are open-source and freely available at the [Castro GitHub](https://github.com/AMReX-Astro/Castro).
@@ -27,7 +27,7 @@ For details, see @zingale_towardxrb_2019, @eiden_xrb1_2020, and @harpole_xrb2_20
 
 ## Particle Acceleration in Neutron Star Environments
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get the WarpX code for Electromagnetic PIC
 
 The WarpX code we used is open-source and freely available at the [WarpX GitHub](https://github.com/BLAST-WarpX/warpx).

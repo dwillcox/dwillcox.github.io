@@ -58,7 +58,7 @@ and we symbolically generate our refinement tagging C++ code.
 
 ## STvAR Enables Users To Leap Into Solving PDEs With High-Performance Computing
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get STvAR
 
 STvAR is freely available at the [STvAR GitHub](https://github.com/AMReX-Astro/STvAR).

@@ -2,7 +2,7 @@
 
 ## Mathematically Modeling Nuclear Reactions
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get pynucastro
 
 pynucastro is open-source and freely available at the [pynucastro GitHub](https://github.com/pynucastro/pynucastro).
@@ -19,7 +19,7 @@ available experimental data from particle accelerators to calculate the nuclear
 reaction rates at various temperatures.
 
 I worked with Mike Zingale to create pynucastro, an open-source Python package
-for interfacing iwth nuclear databases. With pynucastro, researchers and
+for interfacing with nuclear databases. With pynucastro, researchers and
 students alike can easily:
 
 - plot nuclear reaction rates
@@ -31,7 +31,7 @@ For details, see @willcox_pynucastro_2018 and @smith_pynucastro_2023.
 
 ## Computationally Solving Nuclear Reactions
 
-::: {.callout-note}
+::: {.callout-tip}
 # Get our Microphysics Solvers
 
 Our Microphysics solvers are open-source and freely available at our [Microphysics GitHub](https://github.com/AMReX-Astro/Microphysics).
