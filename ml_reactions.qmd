@@ -18,13 +18,13 @@ researched.
 What if we could replace expensive, time-consuming reaction network solvers
 with good approximate surrogate models using machine learning?
 
-If successful, ML surrogate techniques could drastically speed up the most
-time-intensive reaction physics module in nearly all explosive astrophysics
+If successful, ML surrogate techniques for reactions could drastically speed up
+the most time-intensive physics module in nearly all explosive astrophysics
 simulations.
 
 Why?
 
-Well, in high-energy nuclear astrophysics (think supernovae and neutron star
+Well, in high-energy nuclear astrophysics (e.g. supernovae and neutron star
 mergers), turbulence, radiation, and nuclear reactions drive the dynamics. Yet,
 especially in the reaction physics case, these equations mathematically
 generate stiff nonlinearities where we must focus computational intensity to
@@ -40,11 +40,15 @@ large enough dynamic range to capture a complete burning model.
 
 We thus started our research with a simpler forward neural network and found we
 needed a recurrent neural network for gradient descent to train the network
-effectively. We studied simple laminar flame models to start out instead of
-going straight to turbulent flame modeling.
+effectively. I worked with other LBL scientists to study simple laminar flame
+models in our MAESTROeX code instead of leaping straight into turbulent flame
+modeling, and our results with a simple flame model were promising.
+
+![Carbon fusion flame profiles illustrating our machine learning model (dots) compares very favorably to implicit time integration for reactions (lines) on the laminar test case under study.](research/publications/pub0020/pub0020_f13.png)
 
 Our first paper thus demonstrated a successful proof-of-concept method for
-nuclear reaction surrogate modeling.
+nuclear reaction surrogate modeling by coupling PyTorch to our MAESTROeX
+low-Mach hydrodynamics code.
 
 For details, see @fan_neuralnets_2022.
 
