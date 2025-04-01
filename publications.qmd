@@ -8,7 +8,7 @@ As my publication record illustrates, I prefer to research by collaborating with
 
 ## Publication Listings
 
-[Publications (PDF)](research/willcox_publications.pdf)
+[Publications (PDF)](research/publications/willcox_publications.pdf)
 
 [Google Scholar Page](https://scholar.google.com/citations?hl=en&user=5Ns_t38AAAAJ)
 
@@ -129,8 +129,8 @@ M. Zingale, M. P. Katz, D. E. Willcox, A. Harpole
 
 ## 16. Dynamics of Laterally Propagating Flames in X-Ray Bursts. II. Realistic Burning and Rotation
 
-![Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface.
-DOI: [https://www.doi.org/10.3847/1538-4357/abee87](https://www.doi.org/10.3847/1538-4357/abee87)](research/publications/pub0016/pub0016_f6.png "Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface."){group=\"pub-gallery\"}
+![Nuclear energy generation rate within a Helium fusion flame on a neutron star surface rotating with 1ms period.
+DOI: [https://www.doi.org/10.3847/1538-4357/abee87](https://www.doi.org/10.3847/1538-4357/abee87)](research/publications/pub0016/pub0016_f6.png "Nuclear energy generation rate within a Helium fusion flame on a neutron star surface rotating with 1ms period."){group=\"pub-gallery\"}
 
 A. Harpole, N. M. Ford, K. Eiden, M. Zingale, D. E. Willcox, Y. Cavecchi, M. P. Katz
 
