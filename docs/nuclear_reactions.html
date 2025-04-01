@@ -460,14 +460,20 @@ Get pynucastro
 </div>
 </div>
 <p>Nuclear physics powers a vast array of high energy astrophysics events, from fusion in stars to supernovae and neutron star dynamics. Nuclear reactions between atomic nuclei within stellar environments generate energy for starlight and power hydrodynamics and observable radiation.</p>
-<p>We model observed energy generation from nuclei by writing rate equations that couple high temperature nuclei. We assemble theoretial cross-sections and available experimental data from particle accelerators to calculate the nuclear reaction rates at various temperatures.</p>
-<p>I worked with Mike Zingale to create pynucastro, an open-source Python package for interfacing with nuclear databases. With pynucastro, researchers and students alike can easily:</p>
+<p>We model nuclear energy generation with rate equations that couple nuclei via nuclear reactions at high temperatures. In turn, nuclear physicists assemble theoretial cross-sections and available experimental data from particle accelerators to calculate the nuclear reaction rates at various astrophysical temperatures.</p>
+<p>I worked with Mike Zingale to create pynucastro, an open-source Python package for interfacing with nuclear reaction databases. With pynucastro, researchers and students alike can easily:</p>
 <ul>
 <li>plot nuclear reaction rates</li>
 <li>assemble nuclear reaction networks specific to the astrophysics conditions they wish to model</li>
 <li>solve the nuclear reaction equations</li>
 <li>output clear C++ or python code to calcuate nuclear reaction models in other astrophysics simulation codes</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research/publications/pub0021/pub0021_f5.png" class="img-fluid figure-img"></p>
+<figcaption>A pynucastro reaction network illustrating the nuclei and reaction rate links for nuclear Magnesium burning including the alpha chain and nearby odd-numbered nuclei.</figcaption>
+</figure>
+</div>
 <p>For details, see <span class="citation" data-cites="willcox_pynucastro_2018">E. Willcox &amp; Zingale (<a href="#ref-willcox_pynucastro_2018" role="doc-biblioref">2018</a>)</span> and <span class="citation" data-cites="smith_pynucastro_2023">Smith et al. (<a href="#ref-smith_pynucastro_2023" role="doc-biblioref">2023</a>)</span>.</p>
 </section>
 <section id="computationally-solving-nuclear-reactions" class="level2">
@@ -485,20 +491,28 @@ Get our Microphysics Solvers
 <p>Our Microphysics solvers are open-source and freely available at our <a href="https://github.com/AMReX-Astro/Microphysics">Microphysics GitHub</a>.</p>
 </div>
 </div>
-<p>Nuclear reaction equations actually look mathematically similar to rate equations for chemistry or biological populations. We solve any equations of this time using a variety of time integration techniques for coupled, first order ordinary differential equations.</p>
-<p>Nuclear reactions in particular are especially sensitive to temperature, after all, that’s why stars can explode in thermonuclear runaway! This extreme temperature sensitivity makes numbers in our equations tend to “blow up” quickly too, so we have to take small, careful arithmetic steps to solve these equations.</p>
-<p>In mathematical terms, we have to use implicit time integration with careful error control. All such techniques achieve accuracy by implementing more careful calculations. Careful calculations and good error control require additional arithmetic steps, so we need more computing resources to make accurate predictions. While the accuracy versus efficiency tradeoff is especially prominent in nuclear astrophysics, virtually all other fields in computational science struggle with this exact issue.</p>
+<p>Nuclear reaction equations actually look mathematically similar to rate equations for chemistry. We can solve any equations of this sort using a variety of time integration techniques for coupled, first order ordinary differential equations. However, nuclear reactions pose a particular challenge in that they are very stiff, nonlinear equations due to their extreme temperature dependence.</p>
+<p>Physically, this extreme nonlinearity arises because the probability of fusion tunneling through the nuclear Coulomb barrier increases sensitively with the center of mass energies of two nuclei. As astrophysical plasmas reach higher temperatures, nuclei within the plasma reach larger center of mass energies for pairwise interactions. High temperatures thus generate much more likely fusion events.</p>
+<p>Nuclear reactions are thus especially sensitive to temperature, after all, that’s why stars can explode in thermonuclear runaway! This extreme temperature sensitivity makes numbers in our equations tend to “blow up” quickly too, so we have to take small, careful arithmetic steps to solve these equations correctly.</p>
+<p>In mathematical terms, we have to use implicit time integration with careful error control. All such techniques achieve accuracy by implementing more careful calculations. Careful calculations and good error control require additional arithmetic steps, so we need more computing resources to make accurate predictions. While the accuracy versus efficiency tradeoff is especially prominent in nuclear astrophysics, virtually all other fields in computational science struggle with this exact tradeoff.</p>
 <p>(If you’ve ever wondered why meteorologists can get weather predictions wrong, well, it’s likely their predictive calculations traded too much accuracy for efficiency!)</p>
 <p>Note that if we carelessly write simulation code, even the fastest supercomputers will simply give us wrong answers fast!</p>
 <p>For a discussion of the subtleties of solving nuclear reactions with some common methods, see <span class="citation" data-cites="zingale_strang_2021">Zingale et al. (<a href="#ref-zingale_strang_2021" role="doc-biblioref">2021</a>)</span>.</p>
 <p>To take advantage of modern heterogeneous supercomputers with lots of GPUs, I ported the VODE solver for implicit time integration from Fortran 77 to CUDA Fortran. But I realized there could be no room for mistakes, so I followed the old adage - “trust but verify.”</p>
-<p>In my case, I spent every effort to accurately port a highly complex code. Anyone who has ever had to trace the combinatoric pathways of nested <code>go to</code> statements will sympathize! But I didn’t fully trust that I had made no mistakes or that the GPUs would yield correct answers. So I carefully verified the code, requiring that it give me exactly the same results as before the port when comparing CPU calculations. When running my new code on the GPUs, I allowed its results to differ from the CPU results only at the level of numerical roundoff error.</p>
-<p>Our collaboration described this port and the science our combined reaction and hydrodynamics code enabled in our paper for Supercomputing 20 <span class="citation" data-cites="katz_exascale_2020">Katz et al. (<a href="#ref-katz_exascale_2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>In my case, I spent every effort to accurately port a highly complex code. Anyone who has ever had to trace the combinatoric pathways of nested <code>go to</code> statements will sympathize!</p>
+<p>But I didn’t fully trust that I had made no mistakes or that the GPUs would yield correct answers. So I carefully verified the code, requiring that it give me exactly the same results as before the port when comparing CPU calculations. When running my new code on the GPUs, I allowed its results to differ from the CPU results only at the level of numerical roundoff error.</p>
+<p>Our collaboration described this port and the science our combined reaction and hydrodynamics code enabled us to investigate in our paper for Supercomputing 20 <span class="citation" data-cites="katz_exascale_2020">Katz et al. (<a href="#ref-katz_exascale_2020" role="doc-biblioref">2020</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research/publications/pub0014/pub0014_f4.png" class="img-fluid figure-img"></p>
+<figcaption>Density contours and the thermonuclear ignition point for colliding white dwarf stars simulated with the CASTRO code.</figcaption>
+</figure>
+</div>
 <p>Later, we ported my CUDA Fortan integrator to inlined CUDA C++.</p>
 <p>We now use generic macros from the AMReX framework allowing us to compile the same C++ integrator for CPUs, NVIDIA GPUs, or AMD GPUs.</p>
 <p>We published our work and our open-source scientific computing codes in a series of papers.</p>
 <p>For details, see <span class="citation" data-cites="zingale_astrosuite_2018">Zingale et al. (<a href="#ref-zingale_astrosuite_2018" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="fan_maestroex_2019">Fan et al. (<a href="#ref-fan_maestroex_2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="almgren_castro_2020">Almgren et al. (<a href="#ref-almgren_castro_2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="zingale_castro_2020">Zingale et al. (<a href="#ref-zingale_castro_2020" role="doc-biblioref">2020</a>)</span>, and <span class="citation" data-cites="harpole_lowmach_2020">Harpole et al. (<a href="#ref-harpole_lowmach_2020" role="doc-biblioref">2020</a>)</span>.</p>
-<p>While we directly communicated our methods and open code to the wider astrophysics community, our solutions are broadly applicable to related challenges all across computational science.</p>
+<p>While we directly communicated our methods and open code to the wider astrophysics community, our GPU strategy is broadly applicable to related challenges all across computational science.</p>
 
 
 

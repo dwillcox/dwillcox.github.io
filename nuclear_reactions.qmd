@@ -13,19 +13,22 @@ fusion in stars to supernovae and neutron star dynamics. Nuclear reactions
 between atomic nuclei within stellar environments generate energy for starlight
 and power hydrodynamics and observable radiation.
 
-We model observed energy generation from nuclei by writing rate equations that
-couple high temperature nuclei. We assemble theoretial cross-sections and
-available experimental data from particle accelerators to calculate the nuclear
-reaction rates at various temperatures.
+We model nuclear energy generation with rate equations that couple nuclei via
+nuclear reactions at high temperatures. In turn, nuclear physicists assemble
+theoretial cross-sections and available experimental data from particle
+accelerators to calculate the nuclear reaction rates at various astrophysical
+temperatures.
 
 I worked with Mike Zingale to create pynucastro, an open-source Python package
-for interfacing with nuclear databases. With pynucastro, researchers and
-students alike can easily:
+for interfacing with nuclear reaction databases. With pynucastro, researchers
+and students alike can easily:
 
-- plot nuclear reaction rates
-- assemble nuclear reaction networks specific to the astrophysics conditions they wish to model
-- solve the nuclear reaction equations
-- output clear C++ or python code to calcuate nuclear reaction models in other astrophysics simulation codes
+* plot nuclear reaction rates
+* assemble nuclear reaction networks specific to the astrophysics conditions they wish to model
+* solve the nuclear reaction equations
+* output clear C++ or python code to calcuate nuclear reaction models in other astrophysics simulation codes
+
+![A pynucastro reaction network illustrating the nuclei and reaction rate links for nuclear Magnesium burning including the alpha chain and nearby odd-numbered nuclei.](research/publications/pub0021/pub0021_f5.png)
 
 For details, see @willcox_pynucastro_2018 and @smith_pynucastro_2023.
 
@@ -38,15 +41,23 @@ Our Microphysics solvers are open-source and freely available at our [Microphysi
 :::
 
 Nuclear reaction equations actually look mathematically similar to rate
-equations for chemistry or biological populations. We solve any equations of
-this time using a variety of time integration techniques for coupled, first
-order ordinary differential equations.
+equations for chemistry. We can solve any equations of this sort using a variety
+of time integration techniques for coupled, first order ordinary differential
+equations. However, nuclear reactions pose a particular challenge in that they
+are very stiff, nonlinear equations due to their extreme temperature dependence.
 
-Nuclear reactions in particular are especially sensitive to temperature, after
+Physically, this extreme nonlinearity arises because the probability of fusion
+tunneling through the nuclear Coulomb barrier increases sensitively with the
+center of mass energies of two nuclei. As astrophysical plasmas reach higher
+temperatures, nuclei within the plasma reach larger center of mass energies for
+pairwise interactions. High temperatures thus generate much more likely fusion
+events.
+
+Nuclear reactions are thus especially sensitive to temperature, after
 all, that's why stars can explode in thermonuclear runaway! This extreme
 temperature sensitivity makes numbers in our equations tend to "blow up"
 quickly too, so we have to take small, careful arithmetic steps to solve these
-equations.
+equations correctly.
 
 In mathematical terms, we have to use implicit time integration with careful
 error control. All such techniques achieve accuracy by implementing more
@@ -54,7 +65,7 @@ careful calculations. Careful calculations and good error control require
 additional arithmetic steps, so we need more computing resources to make
 accurate predictions. While the accuracy versus efficiency tradeoff is
 especially prominent in nuclear astrophysics, virtually all other fields in
-computational science struggle with this exact issue.
+computational science struggle with this exact tradeoff.
 
 (If you've ever wondered why meteorologists can get weather predictions wrong,
  well, it's likely their predictive calculations traded too much accuracy for
@@ -73,15 +84,19 @@ old adage - "trust but verify."
 
 In my case, I spent every effort to accurately port a highly complex code.
 Anyone who has ever had to trace the combinatoric pathways of nested `go to`
-statements will sympathize! But I didn't fully trust that I had made no
-mistakes or that the GPUs would yield correct answers. So I carefully verified
-the code, requiring that it give me exactly the same results as before the port
-when comparing CPU calculations. When running my new code on the GPUs, I
-allowed its results to differ from the CPU results only at the level of
-numerical roundoff error.
+statements will sympathize!
+
+But I didn't fully trust that I had made no mistakes or that the GPUs would
+yield correct answers. So I carefully verified the code, requiring that it give
+me exactly the same results as before the port when comparing CPU calculations.
+When running my new code on the GPUs, I allowed its results to differ from the
+CPU results only at the level of numerical roundoff error.
 
 Our collaboration described this port and the science our combined reaction and
-hydrodynamics code enabled in our paper for Supercomputing 20 @katz_exascale_2020.
+hydrodynamics code enabled us to investigate in our paper for Supercomputing 20
+@katz_exascale_2020.
+
+![Density contours and the thermonuclear ignition point for colliding white dwarf stars simulated with the CASTRO code.](research/publications/pub0014/pub0014_f4.png)
 
 Later, we ported my CUDA Fortan integrator to inlined CUDA C++.
 
@@ -91,8 +106,9 @@ same C++ integrator for CPUs, NVIDIA GPUs, or AMD GPUs.
 We published our work and our open-source scientific computing codes in a
 series of papers.
 
-For details, see @zingale_astrosuite_2018, @fan_maestroex_2019, @almgren_castro_2020, @zingale_castro_2020, and @harpole_lowmach_2020.
+For details, see @zingale_astrosuite_2018, @fan_maestroex_2019,
+@almgren_castro_2020, @zingale_castro_2020, and @harpole_lowmach_2020.
 
 While we directly communicated our methods and open code to the wider
-astrophysics community, our solutions are broadly applicable to related
+astrophysics community, our GPU strategy is broadly applicable to related
 challenges all across computational science.
