@@ -92,6 +92,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -452,26 +481,46 @@ div.csl-indent {
 <p>But what if unexpected types of stars could undergo thermonuclear runaway and appear to be SNIa but differ in subtle ways to corrupt our measurements of the Universe’s acceleration?</p>
 <p>Perhaps investigating this possibility will help us figure out Dark Energy.</p>
 <p>This thinking motivated my first astrophysics research paper where I used computer simulations to estimate whether “hybrid” carbon-oxygen-neon white dwarf stars could undergo thermonuclear runaway like SNIa from pure carbon-oxygen white dwarf stars. In other words, could “hybrid” white dwarf stars produce impostor SNIa events?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research/publications/pub0001/pub0001_f15.png" class="img-fluid figure-img"></p>
+<figcaption>Progress of the burning front into the stellar core for one simulated hybrid C-O-Ne white dwarf.</figcaption>
+</figure>
+</div>
 <p>I found that while the explosion dynamics from hybrid white dwarf stars were similar to explosions from typical white dwarf stars, hybrids were unlikely to generate impostor SNIa.</p>
 <p>This might be reassuring from a cosmological perspective, but why don’t hybrid white dwarf stars explode like ordinary white dwarf stars?</p>
 <p>I found the key explanation for this finding lies in the evolutionary history for hybrid white dwarfs. The hybrid white dwarf hypothesis requires that earlier in the lifecycle of these stars, they partially burned their carbon to produce neon. By trading carbon for neon, hybrid white dwarfs have less nuclear potential energy available to power the final, explosive thermonuclear runaway. Lower nuclear potential energy at the start of thermonuclear runaway than an equal mass carbon and oxygen white dwarf means thermonuclear runaways from hybrids will on average generate lower kinetic and radiative energy. In other words, explosions from hybrid white dwarfs will be significantly dimmer than explosions from typical white dwarfs.</p>
 <p>For details, see <span class="citation" data-cites="willcox_hybrids_2016">Willcox et al. (<a href="#ref-willcox_hybrids_2016" role="doc-biblioref">2016</a>)</span>.</p>
+<p>For a brief overview of the scientific context for white dwarf research, see <span class="citation" data-cites="calder_cosmic_2017">Calder et al. (<a href="#ref-calder_cosmic_2017" role="doc-biblioref">2017</a>)</span>.</p>
 </section>
 <section id="thermonuclear-supernovae-from-convectively-mixed-hybrid-white-dwarf-stars" class="level2">
 <h2 class="anchored" data-anchor-id="thermonuclear-supernovae-from-convectively-mixed-hybrid-white-dwarf-stars">Thermonuclear Supernovae From Convectively Mixed Hybrid White Dwarf Stars</h2>
-<p>I moved on to other astrophysics topics, but I still remained involved as my collaborators worked to advance my hybrid white dwarf research. We wished to examine whether convective mixing during earlier stages of hybrid carbon, oxygen, neon white dwarf stellar history would change my findings. We found that mixed carbon, oxygen, neon hybrid white dwarfs compared to carbon and oxygen white dwarfs remained likely dimmer and less energetic when undergoing thermonuclear runaway.</p>
+<p>I moved my primary focus to other astrophysics topics, but I still collaborated with Dean Townsley, Alan Calder, and Carlyn Augustine to advance hybrid white dwarf research. We wished to examine whether convective mixing during earlier stages of hybrid carbon, oxygen, neon white dwarf stellar history would change my earlier findings. We found that mixed carbon, oxygen, neon hybrid white dwarfs compared to carbon and oxygen white dwarfs remained likely dimmer and less energetic when undergoing thermonuclear runaway.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research/publications/pub0008/pub0008_f3.png" class="img-fluid figure-img"></p>
+<figcaption>Estimated Nickel-56 mass produced by mixed, hybrid Carbon-Oxygen-Neon white dwarf models.</figcaption>
+</figure>
+</div>
 <p>Our new result was largely consistent with my earlier findings, but it was still important to check thoroughly. Nuances just like this can sometimes have surprising effects.</p>
 <p>For details, see <span class="citation" data-cites="augustine_hybrids_2019">Augustine et al. (<a href="#ref-augustine_hybrids_2019" role="doc-biblioref">2019</a>)</span>.</p>
 </section>
 <section id="deflagrations-from-convectively-mixed-hybrid-white-dwarf-stars" class="level2">
 <h2 class="anchored" data-anchor-id="deflagrations-from-convectively-mixed-hybrid-white-dwarf-stars">Deflagrations from Convectively Mixed Hybrid White Dwarf Stars</h2>
-<p>More recently, a newer graduate student followed up on our earlier hybrid white dwarf research by investigating the potential of hybrid white dwarf stars to produce dimmer Type Iax supernovae.</p>
-<p>This Iax hypothesis was motivated by recognizing that all our earlier thermonuclear runaway simulations modeled our best understanding for producing bright Type Ia supernovae from single white dwarf stars. To simulate SNIa events from single white dwarf stars, we used a deflagration-to-detonation transition model to completely burn carbon fuel all the way to nuclear statistical equilibrium at the iron peak.</p>
-<p>SNIa are known to produce elements as heavy as iron but not much heavier, that is to say, SNIa do not produce elements with much larger atomic mass on the periodic table of elements. This pattern is typical for thermonuclear fusion and it is a natural consequence of the fact that atomic elements around the mass of iron are the most stable of all elements we have so far discovered.</p>
-<p>Type Iax supernovae are different, however, being dimmer than SNIa. If they come from white dwarf stars, then it is possible they simply did not completely burn all their initial carbon fuel to produce heavy elements. This would result in lower energy generation available to power explosive ejecta and observed radiation. We wanted to find out whether the hypothesized carbon, oxygen, neon hybrid white dwarfs could explain Type Iax observations.</p>
-<p>This time, instead of simulating explosions with a deflagration-to-detonation transition model during thermonuclear runaway, graduate student Catherine Feldman simulated pure deflagration in hybrid white dwarfs to allow for significant incomplete nucleosynthesis.</p>
-<p>As before, I assisted wherever able with explaining my original method and providing feedback to the research.</p>
-<p>For details, see <span class="citation" data-cites="feldman_hybrids_2023">Feldman et al. (<a href="#ref-feldman_hybrids_2023" role="doc-biblioref">2023</a>)</span>.</p>
+<p>More recently, Catherine Feldman followed up on our earlier hybrid white dwarf research by investigating the potential of hybrid white dwarf stars to produce dimmer Type Iax supernovae.</p>
+<p>As before, I assisted our collaboration with explaining my original method and providing feedback to the research.</p>
+<p>This Iax hypothesis was motivated by recognizing that all our earlier thermonuclear runaway simulations modeled our best understanding for producing bright Type Ia supernovae from single white dwarf stars. To simulate SNIa events from single white dwarf stars, we used a deflagration-to-detonation transition model to rapidly burn carbon fuel all the way to nuclear statistical equilibrium at the iron peak.</p>
+<p>SNIa are known to produce elements as heavy as iron but not much heavier, that is to say, SNIa do not produce elements with much larger atomic mass on the periodic table of elements. This pattern is typical for thermonuclear fusion and it is a natural consequence of the exceptional stability of atomic elements around the mass of iron.</p>
+<p>Type Iax supernovae are, however, dimmer than SNIa. If they come from white dwarf stars, then it is possible they simply did not completely burn all their initial carbon fuel to produce heavy elements. This would result in lower energy generation available to power explosive ejecta and observed radiation. Catherine wanted to find out whether the hypothesized carbon, oxygen, neon hybrid white dwarfs could explain Type Iax observations.</p>
+<p>This time, instead of simulating explosions with a deflagration-to-detonation transition model during thermonuclear runaway, Catherine simulated pure deflagration in hybrid white dwarfs to allow for significant incomplete nucleosynthesis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research/publications/pub0024/pub0024_f6.png" class="img-fluid figure-img"></p>
+<figcaption>Density profiles of thermonuclear supernova simulations from initial Carbon-Oxygen-Neon white dwarfs generating least (left) and most (right) Nickel-56.</figcaption>
+</figure>
+</div>
+<p>Simulations showed in most cases, deflagrations in hybrid carbon-oxygen-neon white dwarf stars produced <span class="math inline">\(\textup{Ni}^{56}\)</span> in comparable quantities to observational inferences from Type Iax supernovae. Deflagrations in hybrids, however, tended to produce lower ejecta masses and kinetic energies than observers infer.</p>
+<p>For complete details, see <span class="citation" data-cites="feldman_hybrids_2023">Feldman et al. (<a href="#ref-feldman_hybrids_2023" role="doc-biblioref">2023</a>)</span>.</p>
 
 
 
@@ -481,6 +530,9 @@ div.csl-indent {
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
 <div id="ref-augustine_hybrids_2019" class="csl-entry" role="listitem">
 Augustine, C. N., Willcox, D. E., Brooks, J., Townsley, D. M., &amp; Calder, A. C. 2019, <span>ApJ</span>, 887, 188, <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab511a">https://iopscience.iop.org/article/10.3847/1538-4357/ab511a</a>
+</div>
+<div id="ref-calder_cosmic_2017" class="csl-entry" role="listitem">
+Calder, A. C., Krueger, B. K., Jackson, A. P., Willcox, D. E., Miles, B. J., &amp; Townsley, D. M. 2017, J Phys: Conf Ser, 837, 012005, <a href="https://iopscience.iop.org/article/10.1088/1742-6596/837/1/012005">https://iopscience.iop.org/article/10.1088/1742-6596/837/1/012005</a>
 </div>
 <div id="ref-feldman_hybrids_2023" class="csl-entry" role="listitem">
 Feldman, C., Gutierrez, N., Eisenberg, E., Willcox, D. E., Townsley, D. M., &amp; Calder, A. C. 2023, <span>ApJ</span>, 959, 112, <a href="https://iopscience.iop.org/article/10.3847/1538-4357/acf658">https://iopscience.iop.org/article/10.3847/1538-4357/acf658</a>
