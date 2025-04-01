@@ -1,6 +1,6 @@
 # Bio
 
-![Me pictured with NERSC's Cori supercomputer in 2017.](research/gallery/2017_NERSC_Cori.jpg)
+![Me pictured with NERSC's Cori supercomputer in 2017.](research/gallery/2017_NERSC_Cori_web.jpg)
 
 Hi! I'm Don Willcox, a computational physicist.
 
