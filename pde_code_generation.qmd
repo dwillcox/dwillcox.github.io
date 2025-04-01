@@ -123,15 +123,18 @@ Lagrangian methods address this issue by simply moving the grid points or discre
 For arbitrary three dimensional flows, where turbulence is possible, this can quickly lead to a tangled grid. For this reason,
 Lagrangian techniques are generally chosen when the computational complexity of grid tangling can be avoided.
 
-Astrophysical radiation can be modeled by assigning a Lagrangian particle in code
-to represent a set of physical photons or neutrinos. The AMReX framework we used for Eulerian AMR supports
-Lagrangian particles on adaptive meshes as well for such cases.
+For example, astrophysical radiation can be modeled by assigning a Lagrangian
+particle in code to represent a set of physical photons or neutrinos. The AMReX
+framework we used for Eulerian AMR supports Lagrangian particles on adaptive
+meshes as well for such cases.
 
 Code generation is still very useful when those particles have non-trivial evolution.
 
-For example, if you are modeling neutrino radiation with Lagrangian particles, then you may
-want to evolve the neutrino quantum flavor state. This requires solving complex-valued equations
-associated with each particle as it travels, picking up source terms for that equation from nearby neutrinos.
+Suppose you are modeling neutrino radiation transport with Lagrangian particles,
+and you decide you need to evolve the neutrino quantum flavor state as well.
+This requires solving complex-valued equations
+associated with each particle as it travels,
+picking up source terms for that equation from nearby neutrinos.
 
-To see how code generation and a general AMReX-based framework can successfully address this scenario,
+To see how code generation and a general Lagrangian framework can successfully address this scenario,
 see my [Neutrino Quantum Kinetics research page](neutrino_quantum_kinetics.qmd).
