@@ -9,7 +9,7 @@ Our Castro code and our simulation inputs files are open-source and freely avail
 :::
 
 Solving nuclear reactions on GPUs enabled accelerated nuclear astrophysics simulations using the Castro compressible hydrodynamics code.
-For more details about how we accelerated nuclear reactions, see [Nuclear Reactions](nuclear_reactions.qmd).
+For more details about how we accelerated our nuclear reaction solver, see [Nuclear Reactions](nuclear_reactions.qmd).
 
 My GPU work enabled our nuclear astrophysics collaboration to simulate detailed
 two and three-dimensional nuclear flames on neutron star surfaces!
@@ -22,6 +22,8 @@ Earth as a bright burst of X-rays.
 By carefully modeling the X-ray burst physics, we hope to correlate observed
 X-ray bursts with properties of the unseen, super-dense neutron star core
 hiding below its atmosphere.
+
+![Nuclear energy generation rate within a Helium fusion flame on a neutron star surface rotating with 1ms period.](research/publications/pub0016/pub0016_f6.png)
 
 For details, see @zingale_towardxrb_2019, @eiden_xrb1_2020, and @harpole_xrb2_2021.
 
@@ -40,10 +42,11 @@ rotating neutron star magnetospheres.
 
 We worked with a talented intern, Eloise Yang, who set up these simulations in
 the WarpX electromagnetic particle-in-cell (PIC) code. After Eloise left LBL,
-postdoc Hannah Klion picked up the project. Our combined efforts succeeded,
-and our project's first paper explored new advances in electromagnetic PIC
-solver methods and their utility for simulating charge acceleration from
-relativistic magnetic reconnection.
+postdoc Hannah Klion picked up the project. Our project's first paper explored
+new advances in electromagnetic PIC solver methods and their utility for
+simulating charge acceleration from relativistic magnetic reconnection.
+
+![Secondary plasmoid reconnection event shown before (top) and after (bottom) initially evolving from a relativistic transverse current sheet.](research/publications/pub0022/pub0022_f2.png)
 
 For details, see @klion_pic_2023.
 

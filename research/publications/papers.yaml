@@ -85,7 +85,7 @@ papers:
     year: 2021
     link: https://www.doi.org/10.3847/1538-4357/abee87
     figure: pub0016/pub0016_f6.png
-    caption: Nuclear energy generation rate within a Helium fusion flame on a rotating neutron star surface.
+    caption: Nuclear energy generation rate within a Helium fusion flame on a neutron star surface rotating with 1ms period.
 
   - title: "Particle-in-cell Simulation of the Neutrino Fast Flavor Instability"
     authors: S. Richers, D. E. Willcox, N. M. Ford, A. Myers
