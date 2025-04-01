@@ -54,7 +54,7 @@ with preprocessor `include` statements. Our C++ solver framework then reads
 user-supplied initial conditions and evolves the PDEs forward in time using
 a variety of Runge-Kutta explicit time integration methods up to fourth order.
 We use the AMReX framework to provide block-structured adaptive mesh refinement,
-and we symbolically generate our refinement tagging C++ code.
+and we symbolically generate our C++ code for classifying cells needing refinement.
 
 ## STvAR Enables Users To Leap Into Solving PDEs With High-Performance Computing
 
