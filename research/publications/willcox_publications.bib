@@ -1,18 +1,20 @@
 
-@misc{lattanzi_erf_2024,
-	title = {{ERF}: Energy Research and Forecasting Model},
-	rights = {{arXiv}.org perpetual, non-exclusive license},
-	url = {https://arxiv.org/abs/2412.04395},
-	doi = {10.48550/ARXIV.2412.04395},
-	shorttitle = {{ERF}},
-	abstract = {High performance computing ({HPC}) architectures have undergone rapid development in recent years. As a result, established software suites face an ever increasing challenge to remain performant on and portable across modern systems. Many of the widely adopted atmospheric modeling codes cannot fully (or in some cases, at all) leverage the acceleration provided by General-Purpose Graphics Processing Units ({GPGPUs}), leaving users of those codes constrained to increasingly limited {HPC} resources. Energy Research and Forecasting ({ERF}) is a regional atmospheric modeling code that leverages the latest {HPC} architectures, whether composed of only Central Processing Units ({CPUs}) or incorporating {GPUs}. {ERF} contains many of the standard discretizations and basic features needed to model general atmospheric dynamics as well as flows relevant to renewable energy. The modular design of {ERF} provides a flexible platform for exploring different physics parameterizations and numerical strategies. {ERF} is built on a state-of-the-art, well-supported, software framework ({AMReX}) that provides a performance portable interface and ensures {ERF}'s long-term sustainability on next generation computing systems. This paper details the numerical methodology of {ERF} and presents results for a series of verification and validation cases.},
-	publisher = {{arXiv}},
-	author = {Lattanzi, Aaron and Almgren, Ann and Quon, Eliot and Natarajan, Mahesh and Kosovic, Branko and Mirocha, Jeff and Perry, Bruce and Wiersema, David and Willcox, Donald and Yuan, Xingqiu and Zhang, Weiqun},
-	urldate = {2025-03-27},
-	date = {2024},
-	note = {Version Number: 1},
-	keywords = {Atmospheric and Oceanic Physics (physics.ao-ph), Fluid Dynamics (physics.flu-dyn), {FOS}: Physical sciences},
+@article{lattanzi_erf_2024,
+author = {Lattanzi, Aaron and Almgren, Ann and Quon, Eliot and Natarajan, Mahesh and Kosovic, Branko and Mirocha, Jeffrey and Perry, Bruce and Wiersema, David and Willcox, Donald and Yuan, Xingqiu and Zhang, Weiqun},
+title = {ERF: Energy Research and Forecasting Model},
+journal = {Journal of Advances in Modeling Earth Systems},
+volume = {17},
+number = {11},
+pages = {e2024MS004884},
+keywords = {atmospheric flows, fluid dynamics, GPU acceleration},
+doi = {https://doi.org/10.1029/2024MS004884},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024MS004884},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024MS004884},
+note = {e2024MS004884 2024MS004884},
+abstract = {High performance computing (HPC) architectures have undergone rapid development in recent years. As a result, established software suites face an ever increasing challenge to remain performant on and portable across modern systems. Many of the widely adopted atmospheric modeling codes cannot fully (or in some cases, at all) leverage the acceleration provided by General-Purpose Graphics Processing Units, leaving users of those codes constrained to increasingly limited HPC resources. Energy Research and Forecasting (ERF) is a regional atmospheric modeling code that leverages the latest HPC architectures, whether composed of only Central Processing Units (CPUs) or incorporating GPUs. ERF contains many of the standard discretizations and basic features needed to model general atmospheric dynamics. The modular design of ERF provides a flexible platform for exploring different physics parameterizations and numerical strategies. ERF is built on a state-of-the-art, well-supported, software framework (AMReX) that provides a performance portable interface and ensures ERF's long-term sustainability on next generation computing systems. This paper details the numerical methodology of ERF, presents results for a series of verification/validation cases, and documents ERF's performance on current HPC systems. The roughly 5× speed up of ERF (using GPUs) over Weather Research and Forecasting (CPUs only) for a 3D squall line test case highlights the significance of leveraging GPU acceleration.},
+year = {2025}
 }
+
 
 @article{peterson_codegen_2023,
 	title = {Code generation for {AMReX} with applications to numerical relativity},
@@ -20,21 +22,7 @@
 	issn = {0264-9381, 1361-6382},
 	url = {https://iopscience.iop.org/article/10.1088/1361-6382/ad0b37},
 	doi = {10.1088/1361-6382/ad0b37},
-	abstract = {Abstract
-            
-              We present a new python/{SymPy} based code generator for producing executable numerical expressions for partial differential equations in {AMReX}-based applications. We demonstrate the code generator capabilities for the case of
-              
-                
-                  
-                
-                
-                  3
-                  +
-                  1
-                
-                
-              
-              {ADM} formulations of numerical relativity for the constraint damped, conformal Z4 formulations (Z4c and {CCZ}4). The generated spacetime solvers are examined for stability and accuracy using a selection of checks from the standard Apples with Apples testbeds for numerical relativity applications. We also explore physically interesting vacuum spacetimes including head-on and inspiraling black hole binary collisions, and investigate the simulated gravitational waveforms from such events with the Newman–Penrose formulation of waveform extraction.},
+	abstract = {We present a new python/{SymPy} based code generator for producing executable numerical expressions for partial differential equations in {AMReX}-based applications. We demonstrate the code generator capabilities for the case of 3 + 1 {ADM} formulations of numerical relativity for the constraint damped, conformal Z4 formulations (Z4c and {CCZ}4). The generated spacetime solvers are examined for stability and accuracy using a selection of checks from the standard Apples with Apples testbeds for numerical relativity applications. We also explore physically interesting vacuum spacetimes including head-on and inspiraling black hole binary collisions, and investigate the simulated gravitational waveforms from such events with the Newman–Penrose formulation of waveform extraction.},
 	pages = {245013},
 	number = {24},
 	journaltitle = {Classical and Quantum Gravity},

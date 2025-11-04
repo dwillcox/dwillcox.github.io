@@ -1,9 +1,9 @@
 papers:
   - title: "ERF: Energy Research and Forecasting Model"
     authors: A. Lattanzi, A. Almgren, E. Quon, M. Natarajan, B. Kosovic, J. Mirocha, B. Perry, D. Wiersema, D. Willcox, X. Yuan, W. Zhang
-    journal: "arXiv:2412.04395"
-    year: 2024
-    link: https://www.doi.org/10.48550/arXiv.2412.04395
+    journal: "Journal of Advances in Modeling Earth Systems, 17, 11"
+    year: 2025
+    link: https://www.doi.org/10.1029/2024MS004884
     figure: pub0026/pub0026_f11.png
     caption: Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom).
 
