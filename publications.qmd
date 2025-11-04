@@ -20,13 +20,13 @@ As my publication record illustrates, I prefer to research by collaborating with
 ## 26. ERF: Energy Research and Forecasting Model
 
 ![Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom).
-DOI: [https://www.doi.org/10.48550/arXiv.2412.04395](https://www.doi.org/10.48550/arXiv.2412.04395)](research/publications/pub0026/pub0026_f11.png "Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom)."){group=\"pub-gallery\"}
+DOI: [https://www.doi.org/10.1029/2024MS004884](https://www.doi.org/10.1029/2024MS004884)](research/publications/pub0026/pub0026_f11.png "Simulated three-dimensional rainstorm supercell showing cloud water (white), rain water (red), and accumulated rainfall (bottom)."){group=\"pub-gallery\"}
 
 A. Lattanzi, A. Almgren, E. Quon, M. Natarajan, B. Kosovic, J. Mirocha, B. Perry, D. Wiersema, D. Willcox, X. Yuan, W. Zhang
 
-2024, arXiv:2412.04395
+2025, Journal of Advances in Modeling Earth Systems, 17, 11
 
-[https://www.doi.org/10.48550/arXiv.2412.04395](https://www.doi.org/10.48550/arXiv.2412.04395)
+[https://www.doi.org/10.1029/2024MS004884](https://www.doi.org/10.1029/2024MS004884)
 
 ## 25. Code Generation for AMReX with Applications to Numerical Relativity
 
